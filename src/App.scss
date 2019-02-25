@@ -13,3 +13,36 @@
   justify-content: center;
   height: 400px;
 }
+
+.App-title-subtitle {
+  max-width: 800px;
+  margin: 0 auto;
+  h2 {
+    font-size: 22px;
+    font-weight: normal;
+  }
+}
+
+.App-get-started {
+  margin-top: 20px;
+}
+
+.App-benefits-container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1050px;
+}
+
+.App-benefit {
+  width: 33%;
+  margin: 0 25px;
+  line-height: 140%;
+  font-size: 16px;
+}
+
+.App-benefit-title {
+  font-weight: bold;
+  font-size: 25px;
+  color: #ff5745;
+  margin-bottom: 15px;
+}
