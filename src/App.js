@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
+// import { Link } from 'react-router-dom';
+import Firestore from "./Firestore";
 
 class Benefits extends Component {
   render() {
@@ -13,6 +15,33 @@ class Benefits extends Component {
 }
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      email: ""
+    };
+  }
+
+  updateInput = e => {
+      this.setState({
+          [e.target.name]: e.target.value
+      });
+  }
+
+  submitEmail = e => {
+    e.preventDefault();
+    const db = Firestore.firestore();
+    db.collection("users").doc(this.state.email).set({
+      email: this.state.email
+    });
+
+    this.props.history.push('/user');
+    localStorage.setItem('se', this.state.email);
+    this.setState({
+      email: ""
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -26,7 +55,15 @@ class App extends Component {
               <h2>Fast, reliable and simple voice chat for teams — Create your own voice channels and organize them by team, project or whatever you’d like</h2>
             </div>
             <div className="App-get-started">
-              <a href="#" className="large-button">Get Started</a>
+              <form onSubmit={this.submitEmail}>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  onChange={this.updateInput}
+                  value={this.state.email} />
+                  <button type="submit" className="large-button">Get Started</button>
+              </form>
             </div>
           </div>
         </section>
