@@ -33,7 +33,7 @@ class App extends Component {
     const db = Firestore.firestore();
     db.collection("users").doc(this.state.email).set({
       email: this.state.email
-    });
+    }, {merge: true});
 
     this.props.history.push('/user');
     localStorage.setItem('se', this.state.email);

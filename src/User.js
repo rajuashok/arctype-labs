@@ -5,7 +5,6 @@ class User extends React.Component {
     constructor() {
         super();
         this.state = {
-            email: "",
             name: "",
         };
     }
@@ -19,30 +18,19 @@ class User extends React.Component {
     addUser = e => {
         e.preventDefault();
         const db = Firestore.firestore();
-        // TODO: split up email (landing page) and name (account page)
-        db.collection("users").doc(this.state.email).set({
-            email: this.state.email,
+        const email = localStorage.getItem('se');
+        db.collection("users").doc(email).update({
             name: this.state.name,
         })
         this.props.history.push('/company')
-        // TODO: move this to landing page
-        localStorage.setItem('se', this.state.email);
         this.setState({
-          name: "",
-          email: "",
+          name: ""
         });
-      };
+    };
 
     render() {
       return (
           <form onSubmit={this.addUser}>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              onChange={this.updateInput}
-              value={this.state.email}
-            />
             <input
               type="text"
               name="name"
