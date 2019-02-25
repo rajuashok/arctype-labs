@@ -1,7 +1,5 @@
-import firebase from ‘firebase’;
-
-// Initialize Firebase
-const config = {
+import firebase from 'firebase'
+var config = {
     apiKey: "AIzaSyC9iR4Vws4atkhRzX1VFo3qu74gP118ClA",
     authDomain: "switch-3720e.firebaseapp.com",
     databaseURL: "https://switch-3720e.firebaseio.com",
@@ -9,6 +7,5 @@ const config = {
     storageBucket: "switch-3720e.appspot.com",
     messagingSenderId: "553223675043"
 };
-
-firebase.initializeApp(config);
-export default firestore;
+var Firestore = firebase.initializeApp(config);
+export default Firestore;

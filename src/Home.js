@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import App from './App';
+import User from './User';
+import Company from './Company';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Home extends Component {
@@ -20,6 +22,8 @@ class Home extends Component {
 
                 <Route exact path="/" component={App} />
                 <Route path="/get-started" component={GetStarted} />
+                <Route path="/user" component={User} />
+                <Route path="/company" component={Company} />
                 </div>
             </Router>
         );
