@@ -9,21 +9,10 @@ class Home extends Component {
         return (
             <Router>
                 <div>
-                <ul> 
-                    <li>
-                    <Link to="/">App</Link>
-                    </li>
-                    <li>
-                    <Link to="/get-started">Get Started</Link>
-                    </li>
-                </ul>
-
-                <hr />
-
-                <Route exact path="/" component={App} />
-                <Route path="/get-started" component={GetStarted} />
-                <Route path="/user" component={User} />
-                <Route path="/company" component={Company} />
+                    <Route exact path="/" component={App} />
+                    <Route path="/get-started" component={GetStarted} />
+                    <Route path="/user" component={User} />
+                    <Route path="/company" component={Company} />
                 </div>
             </Router>
         );

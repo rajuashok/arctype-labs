@@ -48,7 +48,7 @@ class App extends Component {
         <header className="App-header">
           Switch
         </header>
-        <section className="App-title">
+        <section className="App-title content-wrapper">
           <div>
             <h1>A new and better way to communicate with your distributed team</h1>
             <div className="App-title-subtitle">
@@ -57,12 +57,13 @@ class App extends Component {
             <div className="App-get-started">
               <form onSubmit={this.submitEmail}>
                 <input
+                  className="App-email-input large-input"
                   type="email"
                   name="email"
                   placeholder="Email"
                   onChange={this.updateInput}
                   value={this.state.email} />
-                  <button type="submit" className="large-button">Get Started</button>
+                  <button type="submit" className="button large-button">Get Started</button>
               </form>
             </div>
           </div>
