@@ -33,6 +33,7 @@ class App extends Component {
           <Benefits title="Make talking frictionless" description="No more installing apps, sending around links, entering PINs or choppy calls.  Reliable audio in a beautiful modern interface in your browser." />
         </section>
       </div>
+
     );
   }
 }
