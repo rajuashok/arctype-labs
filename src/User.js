@@ -1,5 +1,6 @@
 import React from 'react';
 import Firestore from "./Firestore";
+import './User.scss';
 
 class User extends React.Component {
     constructor() {
@@ -17,29 +18,42 @@ class User extends React.Component {
 
     addUser = e => {
         e.preventDefault();
-        const db = Firestore.firestore();
-        const email = localStorage.getItem('se');
-        db.collection("users").doc(email).update({
-            name: this.state.name,
-        })
-        this.props.history.push('/company')
-        this.setState({
-          name: ""
-        });
+        if (!this.state.name) {
+            alert("Please your full name.");
+        } else {
+            const db = Firestore.firestore();
+            const email = localStorage.getItem('se');
+            db.collection("users").doc(email).update({
+                name: this.state.name,
+            })
+            this.props.history.push('/company')
+            this.setState({
+            name: ""
+            });
+        }
     };
 
     render() {
       return (
-          <form onSubmit={this.addUser}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              onChange={this.updateInput}
-              value={this.state.name}
-            />
-            <button type="submit">Submit</button>
-          </form>
+          <div>
+            <div className="User-title">
+                    <h1>Create an account</h1>
+            </div>
+            <div className="User-input">
+                <form onSubmit={this.addUser}>
+                    <input
+                        className="User-name-input large-input"
+                        type="text"
+                        name="name"
+                        placeholder="Full Name"
+                        onChange={this.updateInput}
+                        value={this.state.name}
+                        />
+                    <br/>
+                    <button type="submit" className="User-next-button button large-button">Next</button>
+                </form>
+            </div>
+          </div>
           );
         }
      }

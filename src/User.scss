@@ -1,0 +1,28 @@
+
+
+.User-title {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.User-name-input {
+    margin-bottom: 10px;
+    width: 250px;
+  }
+
+.User-input {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.User-next-button {
+    width: 280px;
+}

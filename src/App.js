@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.scss';
-// import { Link } from 'react-router-dom';
 import Firestore from "./Firestore";
 
 class Benefits extends Component {
