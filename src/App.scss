@@ -32,7 +32,7 @@
   margin: 0 auto;
   h2 {
     color: #eee;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: normal;
     margin-top: 0px;
     line-height: 140%;
@@ -60,6 +60,9 @@
 
 .App-benefits {
   padding: 30px 0 90px 0;
+  @media only screen and (max-width: 720px) {
+    padding-top: 0px;
+  }
 }
 .App-benefit {
   width: 33%;
@@ -101,7 +104,13 @@
 
 section.App-image {
   padding-top: 0;
-  margin-top: -112px;
+  margin-top: -80px;
+  @media only screen and (max-width: 1300px) {
+    margin-top: -112px;
+  }
+  @media only screen and (max-width: 500px) {
+    margin-top: -92px;
+  }
 }
 
 .App-product-image {
