@@ -59,7 +59,7 @@
 .App-benefits {
   padding: 30px 0 90px 0;
   @media only screen and (max-width: 720px) {
-    padding: 30px 0px;
+    padding: 0 0 30px 0;
   }
 }
 .App-benefit {
@@ -120,6 +120,9 @@ section.App-image {
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.3);
+    @media only screen and (max-width: 500px) {
+      width: 90%;
+    }
   }
 }
 
