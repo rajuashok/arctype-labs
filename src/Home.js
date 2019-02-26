@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import App from './App';
 import User from './User';
 import Company from './Company';
+import Survey from './Survey';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class Home extends Component {
@@ -15,6 +16,7 @@ class Home extends Component {
                     <Route exact path="/" component={App} />
                     <Route path="/user" component={User} />
                     <Route path="/company" component={Company} />
+                    <Route path="/oops" component={Survey} />
                     {/* <Route path="/onboarding" component={Onboarding} /> */}
                 </div>
             </Router>
