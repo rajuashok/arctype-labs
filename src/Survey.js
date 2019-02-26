@@ -5,7 +5,7 @@ class Survey extends Component {
   render() {
     return (
       <div className="Survey">
-        <section className="App-title content-wrapper">
+        <section className="App-title section-inner">
           <div>
             <h1>Oh shoot! Looks like our servers are blowing up.</h1>
             <div className="App-title-subtitle">
