@@ -9,6 +9,10 @@
   display: flex;
   justify-content: center;
   height: 410px;
+  @media only screen and (min-width: 520px) {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 
   h1 {
     margin: 0 0 20px 0;
@@ -28,7 +32,7 @@
   margin: 0 auto;
   h2 {
     color: #eee;
-    font-size: 22px;
+    font-size: 0.9em;
     font-weight: normal;
     margin-top: 0px;
     line-height: 140%;
@@ -36,13 +40,22 @@
 }
 
 .App-get-started {
-  margin-top: 40px;
+  margin-top: -10px;
+}
+
+.App-start-btn {
+  @media only screen and (max-width: 500px) {
+    width: 280px;
+  }
 }
 
 .App-benefits-inner {
   margin: 0 auto;
   display: flex;
   max-width: 1050px;
+  @media only screen and (max-width: 720px) {
+    flex-direction: column;
+  }
 }
 
 .App-benefits {
@@ -53,6 +66,11 @@
   margin: 0 25px;
   line-height: 150%;
   font-size: 17px;
+  @media only screen and (max-width: 720px) {
+    width: 90%;
+    text-align: justify;
+    margin: 10px 25px;
+  }
 }
 
 .App-benefit-title {
@@ -60,11 +78,25 @@
   font-size: 25px;
   color: #ff5745;
   margin-bottom: 21px;
+  @media only screen and (max-width: 720px) {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+
+.App-benefit-description {
+  @media only screen and (max-width: 720px) {
+    margin-bottom: 30px;
+  }
 }
 
 .App-email-input {
   margin-right: 10px;
+  margin-bottom: 20px;
   width: 250px;
+  @media only screen and (max-width: 500px) {
+    margin-right: 0px;
+  }
 }
 
 section.App-image {

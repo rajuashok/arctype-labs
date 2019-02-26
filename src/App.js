@@ -53,7 +53,7 @@ class GetStarted extends Component {
             placeholder="Email"
             onChange={this.updateInput}
             value={this.state.email} />
-            <button type="submit" className="button large-button">Get Started</button>
+            <button type="submit" className="App-start-btn button large-button">Get Started</button>
         </form>
       </div>
     );

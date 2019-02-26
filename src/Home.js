@@ -14,7 +14,7 @@ class Header extends Component {
                 <div>
                     <a href="/"><div className="Header-logo"/></a>
                 </div>
-                <div>
+                <div className="Login">
                     <a href="#">Login</a>
                 </div>
             </header>
