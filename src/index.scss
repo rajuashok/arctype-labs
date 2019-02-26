@@ -70,6 +70,28 @@ input.large-input {
   font-size: 16px;
 }
 
+select {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: white; /* fallback color if gradients are not supported */
+  background-position: center right;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  padding: 14px;
+  outline: 0;
+  font-size: 16px;
+  color: #757575;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .section-inner {
   max-width: 65%;
 }

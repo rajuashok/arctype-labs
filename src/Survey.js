@@ -15,7 +15,8 @@ class Survey extends Component {
             <h2>If you’d like to move up in the line of the teams being on-boarded, you can fill out this quick survey.</h2>
             </div>
             <div className="App-get-started">
-                  <a href="https://supersignal.typeform.com/to/YshjiX"> <button type="submit" className="button large-button" >Begin Survey</button></a>
+                  <a target="_blank" href="https://supersignal.typeform.com/to/YshjiX"> <button type="submit" className="button large-button" >Begin Survey</button></a>
+>>>>>>> Make teamsize a dropdown
             </div>
           </div>
         </section>

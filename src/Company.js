@@ -52,14 +52,19 @@ class User extends React.Component {
                   value={this.state.company}
                 />
                 <br/>
-                <input
-                  className="User-name-input large-input"
-                  type="team"
-                  name="teamsize"
-                  placeholder="Team Size"
-                  onChange={this.updateInput}
+                <select
                   value={this.state.teamsize}
-                />
+                  onChange={this.updateInput}
+                  className="User-teamsize-input"
+                  name="teamsize">
+                    <option value="">Team Size</option>
+                    <option value="1 - 10">1 - 10</option>
+                    <option value="11 - 25">11 - 25</option>
+                    <option value="26 - 50">26 - 50</option>
+                    <option value="51 - 100">51 - 100</option>
+                    <option value="101 - 500">101 - 500</option>
+                    <option value="500+">500+</option>
+                </select>
                 <br/>
                 <button type="submit" className="User-next-button button large-button">Next</button>
               </form>

@@ -37,7 +37,7 @@ class User extends React.Component {
       return (
           <div>
             <div className="User-title">
-                    <h1>Create an account</h1>
+                <h1>Create an account</h1>
             </div>
             <div className="User-input">
                 <form onSubmit={this.addUser}>
