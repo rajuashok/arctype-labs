@@ -18,16 +18,22 @@
 }
 
 .Footer-copyright {
-    text-align: justify;
+    text-align: center;
+    @media only screen and (max-width: 910px) {
+        margin-bottom: 25px;
+    }
 }
 
 .Footer-links {
     display: flex;
     justify-content: space-between;
-    @media only screen and (max-width: 910px) {
-        margin-top: 15px;
+    @media only screen and (max-width: 610px) {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
     }
 }
+
 
 .Header {
     background-color: #ff5745;

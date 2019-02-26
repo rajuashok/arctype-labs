@@ -30,10 +30,10 @@ class Footer extends Component {
                     © 2019 Talkmesh, inc. All Rights Reserverd.
                 </div>
                 <div className="Footer-links">
-                    <a href="#">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">Service agreement</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">Privacy policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="mailto:support@superabstractions.com">Contact us</a>
+                    <a className="Footer-link" href="#">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a className="Footer-link" href="#">Service agreement</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a className="Footer-link" href="#">Privacy policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a className="Footer-link" href="mailto:support@superabstractions.com">Contact us</a>
                 </div>
             </footer>
         );
