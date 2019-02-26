@@ -45,9 +45,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          Switch
-        </header>
         <section className="App-title content-wrapper">
           <div>
             <h1>A new and better way to communicate with your distributed team</h1>

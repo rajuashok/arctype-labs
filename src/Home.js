@@ -9,6 +9,9 @@ class Home extends Component {
         return (
             <Router>
                 <div>
+                    <header className="App-header">
+                        <div className="App-switch-logo"/>
+                    </header>
                     <Route exact path="/" component={App} />
                     <Route path="/user" component={User} />
                     <Route path="/company" component={Company} />
