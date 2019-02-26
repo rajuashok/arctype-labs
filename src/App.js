@@ -70,7 +70,7 @@ class App extends Component {
       <div className="App">
         <section className="App-title">
           <div className="section-inner">
-            <h1>A new and better way to communicate with your distributed team</h1>
+            <h1>A new and better way to hop on a call with your team</h1>
             <div className="App-title-subtitle">
               <h2>Fast, reliable and simple voice chat for teams — Create your own voice channels and organize them by team, project or whatever you’d like</h2>
             </div>
@@ -85,8 +85,8 @@ class App extends Component {
         <section className="App-benefits">
           <h2>Perfect for distributed teams</h2>
           <div className="App-benefits-inner">
-            <Benefits title="Feel connected" description="Quickly jump into a voice channel anytime and start talking - as if you were in the same room." />
-            <Benefits title="Make decisions faster" description="Stay in sync and get on the same page quicker, instead of going back and forth over email and text." />
+            <Benefits title="Less coordinating" description="Quickly jump into a voice channel anytime and start talking - as if you were in the same room." />
+            <Benefits title="Make decisions faster" description="When emails and text aren't cutting it, hop into a voice channel and get on the same page quicker." />
             <Benefits title="Talk with ease" description="No more installing apps, sending links or entering PINs. Access reliable audio from your browser." />
           </div>
         </section>
