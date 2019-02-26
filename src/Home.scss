@@ -17,8 +17,13 @@
     }
 }
 
+.Footer-copyright {
+    text-align: justify;
+}
+
 .Footer-links {
     display: flex;
+    justify-content: space-between;
     @media only screen and (max-width: 910px) {
         margin-top: 15px;
     }
