@@ -78,7 +78,9 @@ class App extends Component {
           </div>
         </section>
         <section className="App-image">
-          <div className="App-product-image"></div>
+          <div className="App-product-image">
+            <img src="/switch-product.png"/>
+          </div>
         </section>
         <section className="App-benefits">
           <h2>Perfect for distributed teams</h2>

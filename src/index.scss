@@ -16,6 +16,13 @@ body {
   color: #545760;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 section {
   padding: 70px 0;
 }
@@ -23,6 +30,7 @@ section {
 a {
   color: #ff5745;
   text-decoration: none;
+  outline: 0;
 }
 
 h1 {
@@ -103,7 +111,7 @@ select {
 }
 
 .section-inner {
-  max-width: 65%;
+  max-width: 950px;
 }
 
 section {
