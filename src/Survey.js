@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './Survey.scss';
 
 class Survey extends Component {
   render() {
     return (
-      <div className="Survey">
-        <section className="App-title section-inner">
+      <div className="Simple-page Survey">
+        <section className="section-inner">
           <div>
             <h1>Oh shoot! Looks like our servers are blowing up.</h1>
-            <div className="App-title-subtitle">
-                <h2>To keep things from falling over we’re letting in teams one by one, and will reach out when we are ready to onboard your team.</h2>
+            <div className="Survey-explanation">
+              <p>To keep things from falling over we’re letting in teams one by one. We'll reach out when we are ready to onboard your team.<br/><br/>Thank you for your patience.</p>
             </div>
-            <div className="App-title-subtitle">
-            <h2>If you’d like to move up in the line of the teams being on-boarded, you can fill out this quick survey.</h2>
-            </div>
-            <div className="App-get-started">
-                  <a target="_blank" href="https://supersignal.typeform.com/to/YshjiX"> <button type="submit" className="button large-button" >Begin Survey</button></a>
+            <div className="Survey-text-box">
+              <p className="Survey-text">Fill out this quick survey to move up in the line of the teams being on-boarded.</p>
+              <a target="_blank" href="https://supersignal.typeform.com/to/YshjiX"> <button type="submit" className="button large-button" >Begin Survey</button></a>
             </div>
           </div>
         </section>

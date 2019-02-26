@@ -37,9 +37,9 @@ class User extends React.Component {
 
     render() {
       return (
-          <div>
+          <div className="Simple-page">
             <div className="User-title">
-              <h1>Tell us about your team</h1>
+              <h2>Tell us about your team</h2>
             </div>
             <div className="User-input">
               <form onSubmit={this.addUser}>

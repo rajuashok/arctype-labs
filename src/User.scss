@@ -3,11 +3,6 @@
 .User-title {
     margin: 0 auto;
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 200px;
 }
 
 .User-name-input {
@@ -30,4 +25,8 @@
 
 .User-next-button {
     width: 280px;
+}
+
+.User-input {
+    margin-top: 20px;
 }

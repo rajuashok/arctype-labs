@@ -4,13 +4,19 @@ import App from './App';
 import User from './User';
 import Company from './Company';
 import Survey from './Survey';
+import ScrollToTop from 'react-router-scroll-top'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class Header extends Component {
     render() {
         return (
             <header className="Header">
-                <a href="/"><div className="Header-logo"/></a>
+                <div>
+                    <a href="/"><div className="Header-logo"/></a>
+                </div>
+                <div>
+                    <a href="#">Login</a>
+                </div>
             </header>
         );
     }
@@ -21,7 +27,7 @@ class Footer extends Component {
         return (
             <footer className="Footer">
                 <div className="Footer-copyright">
-                    © 2019 Freebird, inc. All Rights Reserverd.
+                    © 2019 Talkmesh, inc. All Rights Reserverd.
                 </div>
                 <div className="Footer-links">
                     <a href="#">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -38,17 +44,19 @@ class Home extends Component {
     render() {
         return (
             <Router>
+                <ScrollToTop>
                 <div className="Home-wrapper">
                     <Header />
                     <div className="Home-inner">
                         <Route exact path="/" component={App} />
-                        <Route path="/user" component={User} />
+                        <Route path="/signup" component={User} />
                         <Route path="/company" component={Company} />
                         <Route path="/oops" component={Survey} />
                         {/* <Route path="/onboarding" component={Onboarding} /> */}
                     </div>
                     <Footer/>
                 </div>
+                </ScrollToTop>
             </Router>
         );
     }
