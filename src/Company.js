@@ -27,7 +27,7 @@ class User extends React.Component {
             company: this.state.company,
             teamsize: this.state.teamsize
           })
-          this.props.history.push('/oops')
+          this.props.history.push('/onboarding')
           this.setState({
             company: "",
             teamsize: "",

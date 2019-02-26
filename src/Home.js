@@ -51,7 +51,7 @@ class Home extends Component {
                         <Route exact path="/" component={App} />
                         <Route path="/signup" component={User} />
                         <Route path="/company" component={Company} />
-                        <Route path="/oops" component={Survey} />
+                        <Route path="/onboarding" component={Survey} />
                         {/* <Route path="/onboarding" component={Onboarding} /> */}
                     </div>
                     <Footer/>
