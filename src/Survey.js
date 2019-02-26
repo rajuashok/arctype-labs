@@ -16,7 +16,6 @@ class Survey extends Component {
             </div>
             <div className="App-get-started">
                   <a target="_blank" href="https://supersignal.typeform.com/to/YshjiX"> <button type="submit" className="button large-button" >Begin Survey</button></a>
->>>>>>> Make teamsize a dropdown
             </div>
           </div>
         </section>
