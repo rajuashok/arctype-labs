@@ -12,9 +12,9 @@ class Survey extends Component {
           <div>
             <h1>You're almost there...</h1>
             <div className="Survey-explanation">
-              <p>We’re manually onboarding teams one by one and need a bit more information about your team before we can proceed.</p>
+              <p>We’re manually onboarding teams one-by-one and need a bit more information before we can proceed.</p>
             </div>
-            <p className="Survey-text">Please fill out this quick questionnaire to continue:</p>
+            <p className="Survey-text">Please fill out this form so we can onboard your team.</p>
             <a target="_blank" href={surveyLink}> <button type="submit" className="button large-button" >Begin</button></a>
           </div>
         </section>
