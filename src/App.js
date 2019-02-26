@@ -45,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="App-title content-wrapper">
+        <section className="App-title section-inner">
           <div>
             <h1>A new and better way to communicate with your distributed team</h1>
             <div className="App-title-subtitle">
@@ -68,7 +68,8 @@ class App extends Component {
         <section className="App-image">
         </section>
         <section className="App-benefits">
-          <div className="App-benefits-container">
+          <h2>Perfect for distributed teams</h2>
+          <div className="App-benefits-inner">
             <Benefits title="Feel connected" description="Quickly jump into a voice channel anytime and start talking - as if you’re in the same room." />
             <Benefits title="Make decisions faster" description="Stay in sync and get right to talking instead of needlessly trying to have meaningful discussions over text." />
             <Benefits title="Talk with ease" description="No more installing apps, sending around links or entering PINs. Reliable audio in your browser." />

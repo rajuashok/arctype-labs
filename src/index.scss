@@ -13,8 +13,18 @@ section {
   margin: 70px 0;
 }
 
+a {
+  color: #ff5745;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 45px;
+  color: #123466;
+}
+
+h2 {
+  font-size: 36px;
   color: #123466;
 }
 
@@ -51,6 +61,12 @@ input.large-input {
   font-size: 16px;
 }
 
-.content-wrapper {
-  max-width: 800px;
+.section-inner {
+  max-width: 65%;
+}
+
+section {
+  h2 {
+    margin-bottom: 50px;
+  }
 }
