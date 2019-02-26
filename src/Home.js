@@ -38,13 +38,15 @@ class Home extends Component {
     render() {
         return (
             <Router>
-                <div>
+                <div className="Home-wrapper">
                     <Header />
-                    <Route exact path="/" component={App} />
-                    <Route path="/user" component={User} />
-                    <Route path="/company" component={Company} />
-                    <Route path="/oops" component={Survey} />
-                    {/* <Route path="/onboarding" component={Onboarding} /> */}
+                    <div className="Home-inner">
+                        <Route exact path="/" component={App} />
+                        <Route path="/user" component={User} />
+                        <Route path="/company" component={Company} />
+                        <Route path="/oops" component={Survey} />
+                        {/* <Route path="/onboarding" component={Onboarding} /> */}
+                    </div>
                     <Footer/>
                 </div>
             </Router>
