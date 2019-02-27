@@ -4,7 +4,7 @@ import './Survey.scss';
 class Survey extends Component {
   render() {
     const email = localStorage.getItem('se');
-    const surveyLink = 'https://supersignal.typeform.com/to/YshjiX?email=' + email;
+    const surveyLink = '[INSERT SURVEY LINK]' + email; // TODO(super-abs)
 
     return (
       <div className="Simple-page Survey">

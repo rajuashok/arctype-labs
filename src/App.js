@@ -92,7 +92,8 @@ class App extends Component {
         </section>
         <section className="App-bottom-signup">
           <div className="section-inner">
-            <h2>Try Talkmesh with your team</h2>
+            {/* TODO(super-abs) */}
+            <h2>Try [INSERT APP NAME] with your team</h2>
             <GetStarted onSubmitEmail={this.onSubmitEmail}/>
           </div>
         </section>

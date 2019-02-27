@@ -27,7 +27,8 @@ class Footer extends Component {
         return (
             <footer className="Footer">
                 <div className="Footer-copyright">
-                    © 2019 Talkmesh, inc. All Rights Reserved.
+                    {/* TODO(super-abs) */}
+                    © 2019 [INSERT APP NAME], inc. All Rights Reserved.
                 </div>
                 <div className="Footer-links">
                     <a className="Footer-link" href="#">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
