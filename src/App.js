@@ -6,6 +6,7 @@ class Benefits extends Component {
   render() {
     return (
       <div className="App-benefit">
+        <img className="App-benefit-icon" src={`/${this.props.icon}.png`} width="50" height="50" />
         <div className="App-benefit-title">{this.props.title}</div>
         <div className="App-benefit-description">{this.props.description}</div>
       </div>
@@ -85,9 +86,9 @@ class App extends Component {
         <section className="App-benefits">
           <h2>Perfect for distributed teams</h2>
           <div className="App-benefits-inner">
-            <Benefits title="Less coordinating" description="Quickly jump into a voice channel anytime and start talking - as if you were in the same room." />
-            <Benefits title="Make decisions faster" description="When emails and text aren't cutting it, hop into a voice channel and get on the same page quicker." />
-            <Benefits title="Talk with ease" description="No more installing apps, sending links or entering PINs. Access reliable audio from your browser." />
+          <Benefits icon="icon1" title="Powerful search" description="Search for customer feedback from social media, email, live support chat and more, in a single place" />
+          <Benefits icon="icon2" title="Focus on building" description="Spend less time aggregating and analyzing data and spend more time building" />
+          <Benefits icon="icon3" title="Shared understanding" description="Share, discuss and analyze customer feedback with your entire team" />
           </div>
         </section>
         <section className="App-bottom-signup">
