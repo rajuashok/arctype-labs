@@ -6,7 +6,7 @@ class Benefits extends Component {
   render() {
     return (
       <div className="App-benefit">
-        <img className="App-benefit-icon" src={`/${this.props.icon}.png`} width="50" height="50" />
+        {this.props.icon && <img className="App-benefit-icon" src={`/${this.props.icon}.png`} width="50" height="50" />}
         <div className="App-benefit-title">{this.props.title}</div>
         <div className="App-benefit-description">{this.props.description}</div>
       </div>
@@ -89,6 +89,14 @@ class App extends Component {
           <Benefits icon="icon1" title="Powerful search" description="Search for customer feedback from social media, email, live support chat and more, in a single place" />
           <Benefits icon="icon2" title="Focus on building" description="Spend less time aggregating and analyzing data and spend more time building" />
           <Benefits icon="icon3" title="Shared understanding" description="Share, discuss and analyze customer feedback with your entire team" />
+          </div>
+        </section>
+        <section className="App-how-it-works App-benefits">
+          <h2>How it Works</h2>
+          <div className="App-benefits-inner">
+            <Benefits title="1. Connect apps" description="Select the services (e.g. Twitter, App Store, Intercom, etc.) you want to start pulling from" />
+            <Benefits title="2. Access feedback" description="All your customer feedback will be accessable and searchable directly from AutoPilot" />
+            <Benefits title="3. Share with your team" description="Start a discussion with your team, share customer feedback via a link or send to JIRA." />
           </div>
         </section>
         <section className="App-bottom-signup">
