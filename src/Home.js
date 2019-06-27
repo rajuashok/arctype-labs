@@ -36,22 +36,38 @@ class Header extends Component {
         );
     }
 }
-
+ 
 class Footer extends Component {
     render() {
         return (
-            <footer className="Footer">
-                <div className="Footer-copyright">
-                    {/* TODO(super-abs) */}
+          <div>
+            <MediaQuery query="(min-width: 720px)">
+              <footer className="Footer">
+                  <div className="Footer-copyright">
+                      © Copyright 2019 Arctype
+                  </div>
+                  <div className="Footer-links">
+                      <a className="Footer-link" href="#">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a className="Footer-link" href="#">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a className="Footer-link" href="#">Support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a className="Footer-link" href="mailto:support@arctype.com">Contact</a>
+                  </div>
+              </footer>
+            </MediaQuery>
+            <MediaQuery query="(max-width: 719px)">
+              <footer className="Footer-mobile">
+                <div className="list">
+                <a className="link" href="#">Terms</a>
+                <a className="link" href="#">Privacy</a>
+                <a className="link" href="#">Support</a>
+                <a className="link" href="mailto:support@arctype.com">Contact</a>
+                <div className="copyright">
                     © Copyright 2019 Arctype
                 </div>
-                <div className="Footer-links">
-                    <a className="Footer-link" href="#">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className="Footer-link" href="#">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className="Footer-link" href="#">Support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className="Footer-link" href="mailto:support@arctype.com">Contact</a>
                 </div>
-            </footer>
+              </footer>
+            </MediaQuery>
+          </div>
         );
     }
 }

@@ -107,7 +107,10 @@
   padding-bottom: 314px;
   width: 100%;
   z-index: 1;
-  // background-image: url('/bottom-back.svg');
+
+  @media only screen and (max-width: 412px) {
+    padding-bottom: 419px;
+  }
 
   .container {
     position: relative;
@@ -176,7 +179,6 @@
   background: #FFFFFF;
   box-shadow: 0px 72px 104px rgba(22, 8, 41, 0.0794908);
   border-radius: 20px;
-
   margin-right: 30px;
 
   display: flex;
@@ -189,6 +191,12 @@
     margin: 25px;
     height: 420px;
     width: 325px;
+  }
+
+  @media only screen and (max-width: 412px) {
+    margin: 0 0 20px 0;
+    width: 280px;
+    height: 457px;
   }
 
   .title {
@@ -204,10 +212,17 @@
     @media only screen and (max-width: 1200px) {
       margin-top: 20px;
     }
+
+    @media only screen and (max-width: 412px) {
+      margin-top: 40px;
+    }
   }
 
   .icon {
     margin-top: 17.67px;
+    @media only screen and (max-width: 412px) {
+      margin-top: 14.67px;
+    }
   }
 
   .description {
@@ -217,14 +232,21 @@
     font-size: 16px;
     line-height: 32px;
     margin: 25.19px 32px 0 32px;
+    text-align: center;
+    letter-spacing: 0.939354px;
+    color: #8A99B7;
 
     @media only screen and (max-width: 1200px) {
       margin-top: 0px;
     }
 
-
-    text-align: center;
-    letter-spacing: 0.939354px;
+    @media only screen and (max-width: 412px) {
+      margin-top: 15px;
+      font-size: 13px;
+      line-height: 28px;
+      letter-spacing: 0.763225px;
+      margin: 14.19px 25px 0 25px;
+    }
   }
 
   .feature-button {
@@ -257,6 +279,10 @@
       mix-blend-mode: normal;
       box-shadow: none;
       color: #95AFD1;
+    }
+
+    @media only screen and (max-width: 412px) {
+      bottom: 43px;
     }
   }
 }

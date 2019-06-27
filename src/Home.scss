@@ -59,6 +59,47 @@
   }
 }
 
+.Footer-mobile {
+  position: absolute;
+  bottom: 84px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  line-height: 23px;
+  letter-spacing: 0.283333px;
+  color: #232D42;
+
+  a {
+    color: #232D42;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 20px;
+  }
+
+  .link {
+    border-bottom: 0.5px solid #CACFD9;
+    padding-bottom: 15.5px;
+    margin-bottom: 25.5px;
+  }
+
+  .copyright {
+    color: #8A99B7;
+    margin-top: 55.5px;
+  }
+}
+
 
 .Header {
   position: absolute;
