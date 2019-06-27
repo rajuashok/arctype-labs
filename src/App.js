@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import Firestore from "./Firestore";
 import * as cx from 'classnames';
+import MediaQuery from 'react-responsive';
 
 class Benefits extends Component {
   render() {
@@ -84,15 +85,31 @@ class App extends Component {
 
   renderTop = () => {
     return (
-      <div className="App-heading-wrapper">
-        <div className="container">
-          <div className="App-heading">
-            Full-stack Machine Learning
+      <div>
+        <MediaQuery query="(min-width: 720px)">
+          <div className="App-heading-wrapper">
+            <div className="container">
+              <div className="App-heading">
+                Full-stack Machine Learning
+              </div>
+              <div className="App-subheading">
+                Powerful tools and solutions for machine learning and data science
+              </div>
+            </div>
           </div>
-          <div className="App-subheading">
-            Powerful tools and solutions for machine learning and data science
+        </MediaQuery>
+        <MediaQuery query="(max-width: 719px)">
+          <div className="App-head-mobile-wrapper">
+            <div className="container">
+              <div className="heading">
+                Full-stack Machine Learning
+              </div>
+              <div className="subheading">
+                Powerful tools for machine learning and data science
+              </div>
+            </div>
           </div>
-        </div>
+        </MediaQuery>
       </div>
     );
   }
@@ -125,16 +142,33 @@ class App extends Component {
       },
     ]
     return (
-      <div className="App-features">
-        <div className="container">
-          <div className="heading">
-            Best-in-class tools for every step of your machine learning workflow
+      <div>
+        <MediaQuery query="(min-width: 720px)">
+          <div className="App-features">
+            <div className="container">
+              <div className="heading">
+                Best-in-class tools for every step of your machine learning workflow
+              </div>
+              <div className="features">
+                {features.map(f => <Feature title={f.title} icon={f.icon} description={f.description} ready={f.ready} />)}
+              </div>
+            </div>
+            <div className="bg-gradient"/>
           </div>
-          <div className="features">
-            {features.map(f => <Feature title={f.title} icon={f.icon} description={f.description} ready={f.ready} />)}
+        </MediaQuery>
+        <MediaQuery query="(max-width: 719px)">
+          <div className="App-features">
+            <div className="container">
+              <div className="heading">
+                Best-in-class tools for your workflow
+              </div>
+              <div className="features">
+                {features.map(f => <Feature title={f.title} icon={f.icon} description={f.description} ready={f.ready} />)}
+              </div>
+            </div>
+            <div className="bg-gradient"/>
           </div>
-        </div>
-        <div className="bg-gradient"/>
+        </MediaQuery>
       </div>
     );
   }

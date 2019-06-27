@@ -74,6 +74,20 @@
     left: 890px;
     right: unset;
   }
+
+  @media only screen and (max-width: 719px) {
+    background-image: url('/robot-mobile.svg');
+    background-repeat: no-repeat;
+    height: 231px;
+    width: 141px;
+    top: 544px;
+    right: 20px;
+    left: unset;
+  }
+
+  @media only screen and (max-width: 320px) {
+    left: 178px;
+  }
 }
 
 .App-mask {
@@ -107,8 +121,12 @@
       padding: 23px 60px 0 60px;
     }
 
+    @media only screen and (max-width: 720px) {
+      padding: 23px 21px 0 21px;
+    }
+
     .heading {
-      font-family: Fieldwork-Geo-Bold;
+      font-family: Fieldwork;
       font-size: 34px;
       line-height: 46px;
       width: 638px;
@@ -117,6 +135,15 @@
       letter-spacing: 1.42946px;
   
       color: #232D42;
+
+      @media only screen and (max-width: 720px) {
+        width: unset;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 36px;
+        letter-spacing: 1.00903px;
+      }
     }
 
     .features {
@@ -230,6 +257,53 @@
       mix-blend-mode: normal;
       box-shadow: none;
       color: #95AFD1;
+    }
+  }
+}
+
+// MOBILE
+
+.App-head-mobile-wrapper {
+  background-image: url('/background-mobile.svg');
+  background-repeat: space;
+  background-position: center;
+  width: 100%;
+  height: 733px;
+
+  @media only screen and (max-width: 320px) {
+    background-image: url('/background-mobile-2.svg');
+  }
+
+  .container {
+    padding: 120px 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 630px) {
+      padding: 120px 20px 0 20px;
+    }
+
+    .heading {
+      font-family: Fieldwork;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 42px;
+      /* or 131% */
+      letter-spacing: 0.533333px;
+      color: #FFFFFF;
+    }
+
+    .subheading {
+      margin-top: 20px;
+      font-family: Nunito Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 32px;
+      /* or 178% */
+      letter-spacing: 0.3px;
+      color: #FFFFFF;
     }
   }
 }
