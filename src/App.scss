@@ -1,6 +1,188 @@
-.App {
-  text-align: center;
+.App-heading-wrapper {
+  position: absolute;
+  left: 190px;
+  // right: 638px;
+  top: 234px;
 }
+
+.App-heading {
+  font-family: Fieldwork-Geo-Bold;
+  font-size: 65px;
+  line-height: 126%;
+  width: 612px;
+
+  letter-spacing: 1.08333px;
+  color: #FFFFFF;
+}
+
+.App-subheading {
+  margin-top: 33px;
+  width: 612px;
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 186%;
+
+  letter-spacing: 0.466667px;
+
+  color: #FFFFFF;
+}
+
+.App-hero {
+  position: absolute;
+  top: 107px;
+  left: 357px;
+  height: 803px;
+  width: 1178px;
+  z-index: -99;
+  background-image: url('/hero-image.svg');
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+
+.App-hero-robot {
+  position: absolute;
+  top: 430px;
+  left: 1067px;
+  height: 576px;
+  width: 352px;
+  background-image: url('/hero-robot.svg');
+  z-index: 2;
+}
+
+.App-mask {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  height: 884px;
+
+  background: linear-gradient(29.1deg, #FFC5A4 5.8%, #FA6CBE 32.79%, #8E62FF 77.57%);
+  mix-blend-mode: normal;
+}
+
+.App-features {
+  position: absolute;
+  top: 918px;
+  width: 100%;
+  z-index: 1;
+  // background: linear-gradient(0deg, #D0E6FF 1.88%, #FFFFFF 100%);
+  // mix-blend-mode: normal;
+  background: white;
+  // opacity: 0.1;
+  // left: 185px;
+  // right: 185px;
+
+  .container {
+    margin: 23px 185px 0px 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .heading {
+      font-family: Fieldwork-Geo-Bold;
+      font-size: 34px;
+      line-height: 46px;
+      width: 638px;
+  
+      text-align: center;
+      letter-spacing: 1.42946px;
+  
+      color: #232D42;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 63px;
+    }
+  }
+}
+
+.Feature-box {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 72px 104px rgba(22, 8, 41, 0.0794908);
+  border-radius: 20px;
+
+  margin-right: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 507px;
+  width: 245px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  .title {
+    font-family: Fieldwork-Geo-Bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.840859px;
+
+    margin-top: 60px;
+    color: #232D42;
+  }
+
+  .icon {
+    margin-top: 17.67px;
+  }
+
+  .description {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 25.19px 32px 0 32px;
+
+
+    text-align: center;
+    letter-spacing: 0.939354px;
+  }
+
+  .feature-button {
+    position: absolute;
+    bottom: 28px;
+    padding: 18px 44px;
+
+    background: #6272FF;
+    box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    &.disabled {
+      text-transform: capitalize;
+      background: #EBEFF5;
+      mix-blend-mode: normal;
+      box-shadow: none;
+      color: #95AFD1;
+    }
+  }
+}
+
+// OLD
 
 .App-title {
   background-color: #ff5745;

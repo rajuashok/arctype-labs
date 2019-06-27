@@ -10,14 +10,16 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 class Header extends Component {
     render() {
         return (
-            <header className="Header">
-                <div>
-                    <a href="/"><div className="Header-logo"/></a>
-                </div>
-                <div className="Login">
-                    <a href="#">Login</a>
-                </div>
-            </header>
+          <header className="Header">
+            <div>
+              <a href="/"><div className="Header-logo"/></a>
+            </div>
+            <div className="Header-menu">
+              <a className="item" href="#">Products</a>
+              <a className="item" href="#">Solutions</a>
+              <a className="item" href="#">Sign In</a>
+            </div>
+          </header>
         );
     }
 }
@@ -28,7 +30,7 @@ class Footer extends Component {
             <footer className="Footer">
                 <div className="Footer-copyright">
                     {/* TODO(super-abs) */}
-                    © 2019 [INSERT APP NAME], inc. All Rights Reserved.
+                    © 2019 Arctype, inc. All Rights Reserved.
                 </div>
                 <div className="Footer-links">
                     <a className="Footer-link" href="#">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -55,7 +57,7 @@ class Home extends Component {
                         <Route path="/onboarding" component={Survey} />
                         {/* <Route path="/onboarding" component={Onboarding} /> */}
                     </div>
-                    <Footer/>
+                    {/* <Footer/> */}
                 </div>
                 </ScrollToTop>
             </Router>

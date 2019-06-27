@@ -1,8 +1,9 @@
 {
-  "name": "super-abs",
+  "name": "arctype",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "firebase": "5.8.4",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",

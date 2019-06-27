@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Firestore from "./Firestore";
+import * as cx from 'classnames';
 
 class Benefits extends Component {
   render() {
@@ -61,54 +62,88 @@ class GetStarted extends Component {
   }
 }
 
+
+class Feature extends Component {
+  render() {
+    const { title, icon, description, ready } = this.props;
+    return (
+      <div className="Feature-box">
+        <div className="title">{title}</div>
+        <div className="icon"><img src={icon}/></div>
+        <div className="description">{description}</div>
+        <button className={cx("feature-button", {"disabled": !ready})}>{ready ? "Get Started" : "Coming Soon"}</button>
+      </div>
+    );
+  }
+}
+
 class App extends Component {
   onSubmitEmail = () => {
     this.props.history.push('/signup');
   }
 
-  render() {
+  renderHeading = () => {
     return (
-      <div className="App">
-        <section className="App-title">
-          <div className="section-inner">
-            <h1>A new and better way to hop on a call with your team</h1>
-            <div className="App-title-subtitle">
-              <h2>Fast, reliable and simple voice chat for teams — Create your own voice channels and organize them by team, project or whatever you’d like</h2>
-            </div>
-            <GetStarted onSubmitEmail={this.onSubmitEmail}/>
-          </div>
-        </section>
-        <section className="App-image">
-          <div className="App-product-image">
-            <img src="/switch-product.png"/>
-          </div>
-        </section>
-        <section className="App-benefits">
-          <h2>Perfect for distributed teams</h2>
-          <div className="App-benefits-inner">
-          <Benefits icon="icon1" title="Powerful search" description="Search for customer feedback from social media, email, live support chat and more, in a single place" />
-          <Benefits icon="icon2" title="Focus on building" description="Spend less time aggregating and analyzing data and spend more time building" />
-          <Benefits icon="icon3" title="Shared understanding" description="Share, discuss and analyze customer feedback with your entire team" />
-          </div>
-        </section>
-        <section className="App-how-it-works App-benefits">
-          <h2>How it Works</h2>
-          <div className="App-benefits-inner">
-            <Benefits title="1. Connect apps" description="Select the services (e.g. Twitter, App Store, Intercom, etc.) you want to start pulling from" />
-            <Benefits title="2. Access feedback" description="All your customer feedback will be accessable and searchable directly from AutoPilot" />
-            <Benefits title="3. Share with your team" description="Start a discussion with your team, share customer feedback via a link or send to JIRA." />
-          </div>
-        </section>
-        <section className="App-bottom-signup">
-          <div className="section-inner">
-            {/* TODO(super-abs) */}
-            <h2>Try [INSERT APP NAME] with your team</h2>
-            <GetStarted onSubmitEmail={this.onSubmitEmail}/>
-          </div>
-        </section>
+      <div className="App-heading-wrapper">
+        <div className="App-heading">
+          Full-stack Machine Learning
+        </div>
+        <div className="App-subheading">
+          Powerful tools and solutions for machine learning and data science
+        </div>
       </div>
+    )
+  }
 
+  renderFeatures = () => {
+    const features = [
+      {
+        title: "Archtype SQL",
+        description: "The next-generation SQL client built for collaboration",
+        icon: "/sql-icon.svg",
+        ready: true
+      },
+      {
+        title: "Archtype Dataprep",
+        description: "Intelligent visual data preparation and date cleaning",
+        icon: "/dataprep-icon.svg",
+        ready: false
+      },
+      {
+        title: "Archtype Datasets",
+        description: "Share and manage datasets across teams",
+        icon: "/datasets-icon.svg",
+        ready: false
+      },
+      {
+        title: "Archtype ML",
+        description: "No-code machine learning",
+        icon: "/ml-icon.svg",
+        ready: false
+      },
+    ]
+    return (
+      <div className="App-features">
+        <div className="container">
+          <div className="heading">
+            Best-in-class tools for every step of your machine learning workflow
+          </div>
+          <div className="features">
+            {features.map(f => <Feature title={f.title} icon={f.icon} description={f.description} ready={f.ready} />)}
+          </div>
+        </div>
+      </div>
     );
+  }
+
+
+  render() {
+    return [
+        this.renderHeading(),
+        <div className="App-hero"/>,
+        <div className="App-hero-robot"/>,
+        this.renderFeatures()
+      ];
   }
 }
 

@@ -1,6 +1,6 @@
 {
-  "short_name": "[INSERT APP NAME]",
-  "name": "[INSERT APP DESCRIPTION HERE]",
+  "short_name": "arctype",
+  "name": "Full Stack Machine Learning",
   "icons": [
     {
       "src": "favicon.ico",
