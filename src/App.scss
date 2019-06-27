@@ -1,12 +1,14 @@
+
 .App-heading-wrapper {
-  position: absolute;
-  left: 190px;
-  // right: 638px;
-  top: 234px;
+  background-image: url('/background-test.svg');
+  background-repeat: space;
+  width: 1440px;
+  height: 884px;
 }
 
 .App-heading {
   font-family: Fieldwork-Geo-Bold;
+  padding: 234px 0 0 190px;
   font-size: 65px;
   line-height: 126%;
   width: 612px;
@@ -17,6 +19,7 @@
 
 .App-subheading {
   margin-top: 33px;
+  margin-left: 190px;
   width: 612px;
 
   font-family: Nunito Sans;
@@ -64,19 +67,16 @@
 }
 
 .App-features {
-  position: absolute;
-  top: 918px;
+  position: relative;
+  margin-top: 34px;
+  padding-bottom: 314px;
   width: 100%;
   z-index: 1;
-  // background: linear-gradient(0deg, #D0E6FF 1.88%, #FFFFFF 100%);
-  // mix-blend-mode: normal;
-  background: white;
-  // opacity: 0.1;
-  // left: 185px;
-  // right: 185px;
+  // background-image: url('/bottom-back.svg');
 
   .container {
-    margin: 23px 185px 0px 185px;
+    position: relative;
+    padding: 23px 185px 0px 185px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,6 +99,17 @@
       justify-content: space-between;
       margin-top: 63px;
     }
+  }
+
+  .bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(0deg, #D0E6FF 1.88%, #FFFFFF 100%);
+    mix-blend-mode: normal;
+    opacity: 0.1;
   }
 }
 

@@ -30,13 +30,13 @@ class Footer extends Component {
             <footer className="Footer">
                 <div className="Footer-copyright">
                     {/* TODO(super-abs) */}
-                    © 2019 Arctype, inc. All Rights Reserved.
+                    © Copyright 2019 Arctype
                 </div>
                 <div className="Footer-links">
-                    <a className="Footer-link" href="#">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className="Footer-link" href="#">Service agreement</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className="Footer-link" href="#">Privacy policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className="Footer-link" href="mailto:support@superabstractions.com">Contact us</a>
+                    <a className="Footer-link" href="#">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a className="Footer-link" href="#">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a className="Footer-link" href="#">Support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a className="Footer-link" href="mailto:support@arctype.com">Contact</a>
                 </div>
             </footer>
         );
@@ -57,7 +57,7 @@ class Home extends Component {
                         <Route path="/onboarding" component={Survey} />
                         {/* <Route path="/onboarding" component={Onboarding} /> */}
                     </div>
-                    {/* <Footer/> */}
+                    <Footer/>
                 </div>
                 </ScrollToTop>
             </Router>

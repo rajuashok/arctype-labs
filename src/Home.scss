@@ -1,7 +1,7 @@
 .Home-wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .Home-inner {
@@ -12,42 +12,61 @@
 .Footer {
     display: flex;
     justify-content: space-between;
-    flex-shrink: 0;
-    margin-top: 97px;
-    // font-size: 15px;
-    // padding: 40px 50px;
-    // border-top: solid 1px #eee;
-    // @media only screen and (max-width: 910px) {
-    //     flex-direction: column;
-    // }
+    position: absolute;
+    bottom: 194px;
+    left: 150px;
+    right: 150px;
+    // flex-shrink: 0;
+    // margin: 97px 150px 194px 150px;
+    
+    a {
+      color: #232D42;
+    }
 }
 
 .Footer-copyright {
-    text-align: center;
-    @media only screen and (max-width: 910px) {
-        margin-bottom: 25px;
-    }
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.283333px;
+
+  color: #232D42;
+  text-align: center;
+  @media only screen and (max-width: 910px) {
+      margin-bottom: 25px;
+  }
 }
 
 .Footer-links {
-    display: flex;
-    justify-content: space-between;
-    @media only screen and (max-width: 610px) {
-        flex-direction: column;
-        margin: 0 auto;
-        text-align: center;
-    }
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.283333px;
+
+  color: #232D42;
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 610px) {
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+  }
 }
 
 
 .Header {
-    position: absolute;
-    left: 185px;
-    right: 185px;
-    top: 46px;
-    display: flex;
-    justify-content: space-between;
-    flex-shrink: 0;
+  position: absolute;
+  top: 46px;
+  left: 185px;
+  right: 185px;
+  // margin: 46px 185px 0 185px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .Header-menu {

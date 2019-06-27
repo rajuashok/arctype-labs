@@ -82,7 +82,7 @@ class App extends Component {
     this.props.history.push('/signup');
   }
 
-  renderHeading = () => {
+  renderTop = () => {
     return (
       <div className="App-heading-wrapper">
         <div className="App-heading">
@@ -132,18 +132,19 @@ class App extends Component {
             {features.map(f => <Feature title={f.title} icon={f.icon} description={f.description} ready={f.ready} />)}
           </div>
         </div>
+        <div className="bg-gradient"/>
       </div>
     );
   }
 
 
   render() {
-    return [
-        this.renderHeading(),
-        <div className="App-hero"/>,
-        <div className="App-hero-robot"/>,
-        this.renderFeatures()
-      ];
+    return (
+      <div>
+        {this.renderTop()}
+        <div className="App-hero-robot"/>
+        {this.renderFeatures()}
+      </div>);
   }
 }
 
