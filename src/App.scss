@@ -4,11 +4,23 @@
   background-repeat: space;
   width: 1440px;
   height: 884px;
+
+  .container {
+    padding: 234px 0 0 190px;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 925px) {
+      padding: 234px 0;
+      align-items: center;
+      width: 100vw;
+    }
+  }
 }
 
 .App-heading {
   font-family: Fieldwork-Geo-Bold;
-  padding: 234px 0 0 190px;
+  // padding: 234px 0 0 190px;
   font-size: 65px;
   line-height: 126%;
   width: 538px;
@@ -19,7 +31,6 @@
 
 .App-subheading {
   margin-top: 33px;
-  margin-left: 190px;
   width: 612px;
 
   font-family: Nunito Sans;
@@ -31,6 +42,10 @@
   letter-spacing: 0.466667px;
 
   color: #FFFFFF;
+
+  @media only screen and (max-width: 925px) {
+    width: 538px;
+  }
 }
 
 .App-hero {
@@ -48,11 +63,17 @@
 .App-hero-robot {
   position: absolute;
   top: 430px;
-  left: 1067px;
+  // left: 1067px;
+  right: 20px;
   height: 576px;
   width: 352px;
   background-image: url('/hero-robot.svg');
   z-index: 2;
+
+  @media only screen and (max-width: 1260px) {
+    left: 890px;
+    right: unset;
+  }
 }
 
 .App-mask {
@@ -82,6 +103,10 @@
     align-items: center;
     text-align: center;
 
+    @media only screen and (max-width: 1200px) {
+      padding: 23px 60px 0 60px;
+    }
+
     .heading {
       font-family: Fieldwork-Geo-Bold;
       font-size: 34px;
@@ -98,6 +123,12 @@
       display: flex;
       justify-content: space-between;
       margin-top: 63px;
+
+      @media only screen and (max-width: 1200px) {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
   }
 
@@ -127,8 +158,10 @@
   height: 507px;
   width: 245px;
 
-  &:last-child {
-    margin-right: 0px;
+  @media only screen and (max-width: 1200px) {
+    margin: 25px;
+    height: 420px;
+    width: 325px;
   }
 
   .title {
@@ -140,6 +173,10 @@
 
     margin-top: 60px;
     color: #232D42;
+
+    @media only screen and (max-width: 1200px) {
+      margin-top: 20px;
+    }
   }
 
   .icon {
@@ -153,6 +190,10 @@
     font-size: 16px;
     line-height: 32px;
     margin: 25.19px 32px 0 32px;
+
+    @media only screen and (max-width: 1200px) {
+      margin-top: 0px;
+    }
 
 
     text-align: center;

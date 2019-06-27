@@ -85,14 +85,16 @@ class App extends Component {
   renderTop = () => {
     return (
       <div className="App-heading-wrapper">
-        <div className="App-heading">
-          Full-stack Machine Learning
-        </div>
-        <div className="App-subheading">
-          Powerful tools and solutions for machine learning and data science
+        <div className="container">
+          <div className="App-heading">
+            Full-stack Machine Learning
+          </div>
+          <div className="App-subheading">
+            Powerful tools and solutions for machine learning and data science
+          </div>
         </div>
       </div>
-    )
+    );
   }
 
   renderFeatures = () => {

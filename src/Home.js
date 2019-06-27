@@ -17,7 +17,7 @@ class Header extends Component {
             <div className="Header-menu">
               <a className="item" href="#">Products</a>
               <a className="item" href="#">Solutions</a>
-              <a className="item" href="#">Sign In</a>
+              <a className="item" href="#">Sign in</a>
             </div>
           </header>
         );
