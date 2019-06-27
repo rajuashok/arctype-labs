@@ -41,7 +41,7 @@ class Footer extends Component {
     render() {
         return (
           <div>
-            <MediaQuery query="(min-width: 720px)">
+            <MediaQuery query="(min-width: 412px)">
               <footer className="Footer">
                   <div className="Footer-copyright">
                       © Copyright 2019 Arctype
@@ -54,7 +54,7 @@ class Footer extends Component {
                   </div>
               </footer>
             </MediaQuery>
-            <MediaQuery query="(max-width: 719px)">
+            <MediaQuery query="(max-width: 411px)">
               <footer className="Footer-mobile">
                 <div className="list">
                 <a className="link" href="#">Terms</a>
