@@ -128,7 +128,7 @@ class App extends Component {
                 {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
               </div>
             </div>
-            <div className="bg-gradient"/>
+            {/* <div className="bg-gradient"/> */}
           </div>
         </MediaQuery>
         <MediaQuery query="(max-width: 719px)">
@@ -141,7 +141,7 @@ class App extends Component {
                 {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
               </div>
             </div>
-            <div className="bg-gradient"/>
+            {/* <div className="bg-gradient"/> */}
           </div>
         </MediaQuery>
       </div>
@@ -150,20 +150,36 @@ class App extends Component {
 
   renderBottomBox = () => {
     return (
-      <div className="Learn-box-container">
-        <div className="Learn-box">
-          <div className="Learn-heading">Have a machine learning project in mind? We can help!</div>
-          <div className="Learn-cta">
-            <div className="logo-text">
-              <div><img src="/logo-labs.svg"/></div>
-              <div className="text">Machine learning consulting</div>
-            </div>
-            <div className="Learn-button">
-              Learn more about our solutions
+      <>
+        <MediaQuery query="(min-width: 1130px)">
+          <div className="Learn-box-container">
+            <div className="Learn-box">
+              <div className="Learn-heading">Have a machine learning project in mind? We can help!</div>
+              <div className="Learn-cta">
+                <div className="logo-text">
+                  <div><img src="/logo-labs.svg"/></div>
+                  <div className="text">Machine learning consulting</div>
+                </div>
+                <div className="Learn-button">
+                  Learn more about our solutions
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </MediaQuery>
+        <MediaQuery query="(max-width: 1129px)">
+          <div className="Learn-box-container-mobile">
+            <div className="Learn-box">
+              <div className="Learn-heading">Have a machine learning project in mind? We can help!</div>
+              <div><img src="/logo-labs-mobile.svg"/></div>
+              <div className="text">Machine learning consulting</div>
+              <div className="Learn-button">
+                Learn more
+              </div>
+            </div>
+          </div>
+        </MediaQuery>
+      </>
     )
   }
 

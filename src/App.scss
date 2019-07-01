@@ -290,7 +290,7 @@
 
 .Learn-box-container {
   margin-top: 154px;
-  padding-bottom: 296px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
 
@@ -301,7 +301,7 @@
 
   .Learn-box {
     background: url("/learnmore-box.png");
-    background-repeat: no-repeat;
+    background-repeat: space;
     background-position: center;
     height: 518px;
     width: 1073px;
@@ -374,6 +374,80 @@
 }
 
 // MOBILE
+
+.Learn-box-container-mobile {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+
+  @media only screen and (max-width: 412px) {
+    padding-bottom: 460px;
+  }
+
+  .Learn-box {
+    background: url("/learnmore-box-mobile.svg");
+    background-position: 50% 27%;
+    box-shadow: 0px 34px 74px rgba(175, 109, 239, 0.22);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 341px;
+    width: 280px;
+    padding: 25px 29px;
+
+    display: flex;
+    flex-direction: column;
+
+    .Learn-heading {
+      margin-bottom: 44px;
+      font-family: Fieldwork;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1.51355px;
+
+      color: #FFFFFF;
+    }
+
+    .text {
+      margin-top: 7px;
+      font-family: Nunito Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 1.51355px;
+
+      color: #FFFFFF;
+
+      opacity: 0.5;
+    }
+
+    .Learn-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 62px;
+      margin-top: 20px;
+
+      background: #FAFBFD;
+      box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
+      border-radius: 7px;
+
+      font-family: Nunito Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 18px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      color: #905FFC;
+    }
+  }
+}
 
 .App-head-mobile-wrapper {
   background-image: url('/background-mobile.svg');
