@@ -10,8 +10,6 @@ import MediaQuery from 'react-responsive';
 import SiteNav, { ContentGroup } from 'react-site-nav';
 import { MenuItem, MobileMenu } from './Menu';
 import { arctypeFeatures } from './constants';
-// const bodyScrollLock = require('body-scroll-lock');
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 class Header extends Component {
     constructor(props) {
@@ -117,9 +115,15 @@ class Home extends Component {
   updateBodyScroll() {
     const home = document.querySelector("#home");
     if (this.state.mobileMenuOpen) {
-      disableBodyScroll(home);
+      if (home) {
+        home.style.overflow = "hidden";
+        home.style.height = "100%";
+      }
     } else {
-      clearAllBodyScrollLocks();
+      if (home) {
+        home.style.overflow = "hidden";
+        home.style.height = "auto";
+      }
     }
   }
 
