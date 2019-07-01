@@ -157,12 +157,13 @@
 
     .coming-soon-mobile {
       position: absolute;
-      right: -200px;
-      bottom: -55px;
+      right: 0px;
+      bottom: -28px;
       background-image: url("/coming-soon-mobile.svg");
       background-repeat: no-repeat;
       height: 100%;
-      width: 100%;
+      width: 109px;
+      background-position: right;
     }
   }
 }

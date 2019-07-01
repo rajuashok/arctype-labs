@@ -32,6 +32,21 @@ export class MobileMenu extends Component {
       productsOpen: false
     };
   }
+
+  handleKeyDown(e) {
+    if (e.key === "Tab") {
+      e.preventDefault();
+    }
+  }
+
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.handleKeyDown);
+  }
+
   render() {
     const { onMenuClosed } = this.props;
     const items = [
