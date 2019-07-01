@@ -1,0 +1,55 @@
+.Menu {
+  overflow: visible;
+  padding: 25px 0;
+}
+
+.Menu-item {
+  position: relative;
+  display: flex;
+
+  .icon {
+    margin-left: 15px;
+  }
+
+  .text {
+    margin-left: 8.9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+    font-family: Fieldwork;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.756773px;
+
+    color: #232D42;
+  }
+
+  .description {
+    margin-top: 11.46px;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    /* or 146% */
+    letter-spacing: 0.763225px;
+
+    color: #8A99B7;
+  }
+
+  .coming-soon {
+    position: absolute;
+    right: -10px;
+    top: 7.26px;
+    background-image: url("/coming-soon.svg");
+    background-repeat: no-repeat;
+    height: 47px;
+    width: 109px;
+  }
+}

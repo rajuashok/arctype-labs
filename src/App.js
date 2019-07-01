@@ -3,6 +3,7 @@ import './App.scss';
 import Firestore from "./Firestore";
 import * as cx from 'classnames';
 import MediaQuery from 'react-responsive';
+import { arctypeFeatures } from './constants';
 
 class Benefits extends Component {
   render() {
@@ -66,13 +67,13 @@ class GetStarted extends Component {
 
 class Feature extends Component {
   render() {
-    const { title, icon, description, ready } = this.props;
+    const { title, icon, description, disabled } = this.props;
     return (
       <div className="Feature-box">
         <div className="title">{title}</div>
         <div className="icon"><img src={icon}/></div>
         <div className="description">{description}</div>
-        <button className={cx("feature-button", {"disabled": !ready})}>{ready ? "Get Started" : "Coming Soon"}</button>
+        <button className={cx("feature-button", {"disabled": disabled})}>{!disabled ? "Get Started" : "Coming Soon"}</button>
       </div>
     );
   }
@@ -115,32 +116,6 @@ class App extends Component {
   }
 
   renderFeatures = () => {
-    const features = [
-      {
-        title: "Arctype SQL",
-        description: "The next-generation SQL client built for collaboration",
-        icon: "/sql-icon.svg",
-        ready: true
-      },
-      {
-        title: "Arctype Dataprep",
-        description: "Intelligent visual data preparation and date cleaning",
-        icon: "/dataprep-icon.svg",
-        ready: false
-      },
-      {
-        title: "Arctype Datasets",
-        description: "Share and manage datasets across teams",
-        icon: "/datasets-icon.svg",
-        ready: false
-      },
-      {
-        title: "Arctype ML",
-        description: "No-code machine learning",
-        icon: "/ml-icon.svg",
-        ready: false
-      },
-    ]
     return (
       <div>
         <MediaQuery query="(min-width: 720px)">
@@ -150,7 +125,7 @@ class App extends Component {
                 Best-in-class tools for every step of your machine learning workflow
               </div>
               <div className="features">
-                {features.map(f => <Feature title={f.title} icon={f.icon} description={f.description} ready={f.ready} />)}
+                {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
               </div>
             </div>
             <div className="bg-gradient"/>
@@ -163,7 +138,7 @@ class App extends Component {
                 Best-in-class tools for your workflow
               </div>
               <div className="features">
-                {features.map(f => <Feature title={f.title} icon={f.icon} description={f.description} ready={f.ready} />)}
+                {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
               </div>
             </div>
             <div className="bg-gradient"/>
