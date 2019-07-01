@@ -20,41 +20,45 @@ class Header extends Component {
         const { onMenuClicked } = this.props;
         return (
           <div>
-            <MediaQuery query="(min-width: 720px)">
+            <MediaQuery query="(min-width: 900px)">
               <header className="Header">
-                <div>
-                  <a href="/"><div className="Header-logo"/></a>
+                <div className="Header-items">
+                  <div>
+                    <a href="/"><div className="Header-logo"/></a>
+                  </div>
+                  <div className="menu-wrapper">
+                    <SiteNav
+                      align="right" /* center, left, right. This directly maps to justify-content of the root grid. */
+                      // columnWidth="200"
+                      rowHeight="23"
+                      background="transparent"
+                      color="#fff"
+                      fontSize="17"
+                      fontFamily="Nunito Sans"
+                      fontWeight="bold"
+                      // contentBackground="#fff" /* Applies to all content groups */
+                      // contentColor="#323232" /* Applies to all content groups */
+                      contentTop="7.88" /* Adjusts the distance between ContentGroups and root items */
+                      // breakpoint="768" /* Show site nav at this breakpoint */
+                      // debug={false} /* Keep ContentGroups open to make debugging easier */
+                      >
+                      <ContentGroup title="Product" width="470" height="502">
+                        <div className="Menu">
+                          {arctypeFeatures.map(f => <MenuItem title={f.title} description={f.description} icon={f.icon} disabled={f.disabled} />)}
+                        </div>
+                      </ContentGroup>
+                      {/* <ContentGroup title="Solutions" />
+                      <ContentGroup title="Sign in" /> */}
+                    </SiteNav>
+                    <a className="menu-item" href="#">Solutions</a>
+                    <a className="menu-item" href="#">Sign in</a>
+                    {/* <div className="Header-menu">
+                    </div> */}
+                  </div>
                 </div>
-                <SiteNav
-                  align="right" /* center, left, right. This directly maps to justify-content of the root grid. */
-                  // columnWidth="200"
-                  rowHeight="23"
-                  background="transparent"
-                  color="#fff"
-                  fontSize="17"
-                  fontFamily="Nunito Sans"
-                  fontWeight="bold"
-                  // contentBackground="#fff" /* Applies to all content groups */
-                  // contentColor="#323232" /* Applies to all content groups */
-                  contentTop="7.88" /* Adjusts the distance between ContentGroups and root items */
-                  // breakpoint="768" /* Show site nav at this breakpoint */
-                  // debug={false} /* Keep ContentGroups open to make debugging easier */
-                  >
-                  <ContentGroup title="Product" width="470" height="502">
-                    <div className="Menu">
-                      {arctypeFeatures.map(f => <MenuItem title={f.title} description={f.description} icon={f.icon} disabled={f.disabled} />)}
-                    </div>
-                  </ContentGroup>
-                  {/* <ContentGroup title="Solutions" />
-                  <ContentGroup title="Sign in" /> */}
-                </SiteNav>
-                {/* <div className="Header-menu">
-                  <a className="item" href="#">Solutions</a>
-                  <a className="item" href="#">Sign in</a>
-                </div> */}
               </header>
             </MediaQuery>
-            <MediaQuery query="(max-width: 719px)">
+            <MediaQuery query="(max-width: 899px)">
               <header className="Header-mobile">
                 <div>
                   <a href="/"><div className="Header-logo"/></a>

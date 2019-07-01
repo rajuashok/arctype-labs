@@ -5,14 +5,15 @@
   width: 1440px;
   height: 884px;
 
-  .container {
+  .heading-container {
     padding: 234px 0 0 190px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 
-    @media only screen and (max-width: 925px) {
-      padding: 234px 0;
-      align-items: center;
+    @media only screen and (max-width: 900px) {
+      padding: 234px 60px;
+      align-items: flex-start;
       width: 100vw;
     }
   }
@@ -300,7 +301,7 @@
     background-image: url('/background-mobile-2.svg');
   }
 
-  .container {
+  .head-mobile-container {
     padding: 120px 60px 0 60px;
     display: flex;
     flex-direction: column;

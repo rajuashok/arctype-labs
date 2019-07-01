@@ -89,7 +89,7 @@ class App extends Component {
       <div>
         <MediaQuery query="(min-width: 720px)">
           <div className="App-heading-wrapper">
-            <div className="container">
+            <div className="heading-container">
               <div className="App-heading">
                 Full-stack Machine Learning
               </div>
@@ -101,7 +101,7 @@ class App extends Component {
         </MediaQuery>
         <MediaQuery query="(max-width: 719px)">
           <div className="App-head-mobile-wrapper">
-            <div className="container">
+            <div className="head-mobile-container">
               <div className="heading">
                 Full-stack Machine Learning
               </div>
