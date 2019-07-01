@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import Home from './Home';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(<Home />, document.getElementById('root'));
 

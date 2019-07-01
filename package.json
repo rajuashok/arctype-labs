@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "body-scroll-lock": "^2.6.3",
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "firebase": "5.8.4",
     "node-sass": "^4.11.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
+    "rc-collapse": "^1.11.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-responsive": "^7.0.0",
     "react-router-dom": "^4.3.1",
     "react-router-scroll-top": "^0.1.1",
     "react-scripts": "2.1.5",
-    "react-site-nav": "^0.2.9"
+    "react-site-nav": "^0.2.9",
+    "reactstrap": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

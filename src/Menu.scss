@@ -53,3 +53,116 @@
     width: 109px;
   }
 }
+
+.Menu-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 9999999;
+  overflow: scroll;
+  height: 100vh;
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url("/menu-close.svg");
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  .items {
+    margin-top: 103px;
+    margin-bottom: 58px;
+
+    .item-container {
+      margin: 24px 0;
+      font-family: Nunito Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 23px;
+      letter-spacing: 0.283333px;
+      cursor: pointer;
+
+      color: #232D42;
+
+      .simple-item {
+        margin-left: 20px;
+      }
+
+      .selected {
+        color: #8E62FF;
+      }
+
+      .collapse-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .caret {
+        height: 6px;
+        width: 6px;
+        border-bottom: 2px solid #232D42;
+        border-right: 2px solid #232D42;
+        transform: rotate(-45deg);
+        margin-right: 19.76px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .caret-selected {
+        border-bottom: 2px solid #8E62FF;
+        border-right: 2px solid #8E62FF;
+        transform: rotate(45deg);
+      }
+
+      .rc-collapse-header {
+        margin-left: 20px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+
+  .product-items {
+    margin-top: 21px;
+    padding-bottom: 14px;
+    background-color: #EEF5F9;
+  }
+
+  .product-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .icon {
+    }
+
+    .title {
+      font-family: Fieldwork;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.756773px;
+
+      color: #232D42;
+      margin-left: 8.9px;
+    }
+
+    .coming-soon-mobile {
+      position: absolute;
+      right: -200px;
+      bottom: -55px;
+      background-image: url("/coming-soon-mobile.svg");
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

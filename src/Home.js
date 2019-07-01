@@ -8,11 +8,18 @@ import ScrollToTop from 'react-router-scroll-top'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import MediaQuery from 'react-responsive';
 import SiteNav, { ContentGroup } from 'react-site-nav';
-import { MenuItem } from './Menu';
+import { MenuItem, MobileMenu } from './Menu';
 import { arctypeFeatures } from './constants';
+// const bodyScrollLock = require('body-scroll-lock');
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 class Header extends Component {
+    constructor(props) {
+      super(props);
+    }
+
     render() {
+        const { onMenuClicked } = this.props;
         return (
           <div>
             <MediaQuery query="(min-width: 720px)">
@@ -54,7 +61,9 @@ class Header extends Component {
                 <div>
                   <a href="/"><div className="Header-logo"/></a>
                 </div>
-                <div className="Header-hamburger"/>
+                <div onClick={() => {
+                  if (onMenuClicked) onMenuClicked();
+                }} className="Header-hamburger"/>
               </header>
             </MediaQuery>
           </div>
@@ -98,25 +107,43 @@ class Footer extends Component {
 }
 
 class Home extends Component {
-    render() {
-        return (
-            <Router>
-                <ScrollToTop>
-                <div className="Home-wrapper">
-                    <Header />
-                    <div className="Home-inner">
-                        <Route exact path="/" component={App} />
-                        <Route path="/signup" component={User} />
-                        <Route path="/company" component={Company} />
-                        <Route path="/onboarding" component={Survey} />
-                        {/* <Route path="/onboarding" component={Onboarding} /> */}
-                    </div>
-                    <Footer/>
-                </div>
-                </ScrollToTop>
-            </Router>
-        );
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobileMenuOpen: false
+    };
+  }
+
+  updateBodyScroll() {
+    const home = document.querySelector("#home");
+    if (this.state.mobileMenuOpen) {
+      disableBodyScroll(home);
+    } else {
+      clearAllBodyScrollLocks();
     }
+  }
+
+  render() {
+      this.updateBodyScroll();
+      return (
+          <Router>
+              <ScrollToTop>
+              <div className="Home-wrapper" id="home">
+                  <Header onMenuClicked={() => {this.setState({ mobileMenuOpen: true })}} />
+                  {this.state.mobileMenuOpen && <MobileMenu onMenuClosed={() => {this.setState({mobileMenuOpen: false})}} />}
+                  <div className="Home-inner">
+                      <Route exact path="/" component={App} />
+                      <Route path="/signup" component={User} />
+                      <Route path="/company" component={Company} />
+                      <Route path="/onboarding" component={Survey} />
+                      {/* <Route path="/onboarding" component={Onboarding} /> */}
+                  </div>
+                  <Footer/>
+              </div>
+              </ScrollToTop>
+          </Router>
+      );
+  }
 }
 
 export default Home;
