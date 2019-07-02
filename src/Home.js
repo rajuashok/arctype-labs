@@ -83,10 +83,10 @@ class Footer extends Component {
                       © Copyright 2019 Arctype
                   </div>
                   <div className="Footer-links">
-                      <a className="Footer-link" href="#">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a className="Footer-link" href="#">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a className="Footer-link" href="#">Support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a className="Footer-link" href="mailto:support@arctype.com">Contact</a>
+                      <a className="link" href="#">Terms</a>
+                      <a className="link" href="#">Privacy</a>
+                      <a className="link" href="#">Support</a>
+                      <a className="link" href="mailto:support@arctype.com">Contact</a>
                   </div>
               </footer>
             </MediaQuery>

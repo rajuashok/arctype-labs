@@ -248,10 +248,30 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 32px;
-    margin: 25.19px 32px 0 32px;
+    margin-top: 25.19px;
     text-align: center;
     letter-spacing: 0.939354px;
     color: #8A99B7;
+
+    .feat-margin-sql {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .feat-margin-dataprep {
+      padding-left: 37px;
+      padding-right: 36px;
+    }
+
+    .feat-margin-dataset {
+      padding-left: 40px;
+      padding-right: 41px;
+    }
+
+    .feat-margin-ml {
+      padding-left: 31px;
+      padding-right: 32px;
+    }
 
     @media only screen and (max-width: 1200px) {
       margin-top: 0px;
@@ -269,9 +289,10 @@
   .feature-button {
     position: absolute;
     bottom: 28px;
-    padding: 18px 44px;
+    padding: 18px 42px;
+    width: 186px;
 
-    background: #6272FF;
+    background: #8F5CFF;
     box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
     border-radius: 7px;
     border: none;
@@ -341,8 +362,8 @@
     .Learn-cta {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-top: 35px;
+      align-items: flex-end;
+      margin-top: 28px;
     }
     
     .logo-text {
@@ -360,13 +381,15 @@
         color: #FFFFFF;
 
         opacity: 0.5;
+        margin-top: 9px;
       }
     }
   }
 
   .Learn-button {
-    height: 50px;
+    height: 54px;
     width: 350px;
+    margin-bottom: 5px;
 
     display: flex;
     align-items: center;
