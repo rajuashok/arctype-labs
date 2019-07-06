@@ -759,12 +759,12 @@ color: #fff;
   font-family: 'Nunito Sans';
   margin: 1em;
   border-radius: 1em;
-  padding: 2em 2em 1em 2em;
   width: 245px;
   height: 136px;
 }
 
 .solutions-title {
+  display: table-cell;
   vertical-align: middle;
 }
 
@@ -773,7 +773,7 @@ color: #fff;
 }
 
 .computer-vision {
-  background-image: linear-gradient(to top right, #FC78F8, #F74343);
+  background-image: linear-gradient(to top right, #F74343, #FC78F8);
 }
 
 .churn-prediction {
@@ -793,7 +793,7 @@ color: #fff;
 }
 
 .trading-signals {
-  background-image: linear-gradient(to top right, #6562FF, #53D39A);
+  background-image: linear-gradient(to top right, #53D39A, #6562FF);
 }
 
 .supply-chain-optimization {
@@ -801,7 +801,7 @@ color: #fff;
 }
 
 .recommendation-systems {
-  background-image: linear-gradient(to top right, #53D39A, #62B7FF);
+  background-image: linear-gradient(to top right, #62B7FF, #53D39A);
 }
 
 .graph-classification {
