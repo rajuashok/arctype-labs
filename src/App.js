@@ -198,6 +198,9 @@ class App extends Component {
         <MediaQuery query="(min-width: 720px)">
           <div className="Custom-solutions">
             <div className="container-features">
+              <div className="heading">
+                Custom Solutions for Enterprises and Startups
+              </div>
               <div className="row">
                 <div className="col nlp">Natural Language Processing</div>
                 <div className="col computer-vision">Computer Vision</div>

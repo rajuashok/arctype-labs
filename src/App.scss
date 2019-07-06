@@ -186,6 +186,7 @@
   width: 100%;
   z-index: 1;
   background: url('/bg-swoosh.png');
+  background-repeat: no-repeat;
 
   @media only screen and (max-width: 412px) {
     // padding-bottom: 419px;
@@ -437,7 +438,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 80px 78px;
+    padding: 80px 250px 78px 250px;
 
     .Learn-heading {
       font-family: Fieldwork;
@@ -480,7 +481,7 @@
 
   .Learn-button {
     height: 54px;
-    width: 350px;
+    width: 260px;
     margin-bottom: 5px;
 
     display: flex;
@@ -489,7 +490,7 @@
 
     background: #FAFBFD;
     box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
-    border-radius: 7px;
+    border-radius: 4px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -505,7 +506,7 @@
 
   .Learn-button-email {
     height: 54px;
-    width: 350px;
+    width: 260px;
     margin-bottom: 5px;
 
     display: flex;
@@ -514,7 +515,7 @@
 
     background: #431BE5;
     box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
-    border-radius: 7px;
+    border-radius: 4px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -687,8 +688,8 @@
 .Applications-button {
 height: 40px;
 width: 650px;
-margin-top: 5em;
-margin-bottom: 1em;
+margin-top: 4em;
+margin-bottom: 7em;
 
 display: flex;
 align-items: center;
@@ -743,10 +744,12 @@ color: #fff;
 
 .col {
   flex-basis: 100%;
-  padding: 1em;
   margin: 2em;
   border-radius: 1em;
-  padding: 2em;
+  padding: 2em 2em 1em 2em;
+
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nlp {
