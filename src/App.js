@@ -202,22 +202,22 @@ class App extends Component {
                 Custom Solutions for Enterprises and Startups
               </div>
               <div className="row">
-                <div className="col nlp">Natural Language Processing</div>
-                <div className="col computer-vision">Computer Vision</div>
-                <div className="col churn-prediction">Churn Prediction</div>
-                <div className="col predictive-analytics">Predictive Analytics</div>
+                <div className="col nlp"><p className="solutions-title">Natural Language Processing</p></div>
+                <div className="col computer-vision"><p className="solutions-title">Computer Vision</p></div>
+                <div className="col churn-prediction"><p className="solutions-title">Churn Prediction</p></div>
+                <div className="col predictive-analytics"><p className="solutions-title">Predictive Analytics</p></div>
               </div>
               <div className="row">
-                <div className="col sentiments-analysis">Sentiments Analysis</div>
-                <div className="col sales-forecasting">Sales Forecasting</div>
-                <div className="col trading-signals">Trading Signals</div>
-                <div className="col supply-chain-optimization">Supply-chain Optimization</div>
+                <div className="col sentiments-analysis"><p className="solutions-title">Sentiments Analysis</p></div>
+                <div className="col sales-forecasting"><p className="solutions-title">Sales Forecasting</p></div>
+                <div className="col trading-signals"><p className="solutions-title">Trading Signals</p></div>
+                <div className="col supply-chain-optimization"><p className="solutions-title">Supply-chain Optimization</p></div>
               </div>
               <div className="row">
-                <div className="col recommendation-systems">Recommendation Systems</div>
-                <div className="col graph-classification">Graph Classification</div>
-                <div className="col hyperparameter-optimization">Hyperparameter Optimization</div>
-                <div className="col model-compression">Model Compressions</div>
+                <div className="col recommendation-systems"><p className="solutions-title">Recommendation Systems</p></div>
+                <div className="col graph-classification"><p className="solutions-title">Graph Classification</p></div>
+                <div className="col hyperparameter-optimization"><p className="solutions-title">Hyperparameter Optimization</p></div>
+                <div className="col model-compression"><p className="solutions-title">Model Compressions</p></div>
               </div>
               <div className="Applications-button">Do you have an application that's not listed above? <a href="#">&nbsp; Let us know</a> </div>
             </div>
