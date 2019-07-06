@@ -70,10 +70,10 @@ class Feature extends Component {
     const { title, icon, description, disabled } = this.props;
     return (
       <div className="Feature-box">
-        <div className="title">{title}</div>
         <div className="icon"><img src={icon}/></div>
+        <div className="title">{title}</div>
         <div className="description">{description}</div>
-        <button className={cx("feature-button", {"disabled": disabled})}>{!disabled ? "Get Started" : "Coming Soon"}</button>
+        {/*<button className={cx("feature-button", {"disabled": disabled})}>{!disabled ? "Get Started" : "Coming Soon"}</button>*/}
       </div>
     );
   }
@@ -91,10 +91,13 @@ class App extends Component {
           <div className="App-heading-wrapper">
             <div className="heading-container">
               <div className="App-heading">
-                Full-stack Machine Learning
+                Machine Learning Consulting
               </div>
               <div className="App-subheading">
-                Powerful tools and solutions for machine learning and data science
+                Helping you solve business problems using machine learning and AI
+              </div>
+              <div className="Header-button">
+                TELL US ABOUT YOUR PROJECT
               </div>
             </div>
           </div>
@@ -103,10 +106,10 @@ class App extends Component {
           <div className="App-head-mobile-wrapper">
             <div className="head-mobile-container">
               <div className="heading">
-                Full-stack Machine Learning
+                Machine Learning Consulting
               </div>
               <div className="subheading">
-                Powerful tools for machine learning and data science
+                Helping you solve business problems using machine learning and AI
               </div>
             </div>
           </div>
@@ -122,10 +125,10 @@ class App extends Component {
           <div className="App-features">
             <div className="container-features">
               <div className="heading">
-                Best-in-class tools for every step of your machine learning workflow
+                How Can We Help
               </div>
               <div className="features">
-                {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
+                {arctypeFeatures.map(f => <Feature icon={f.icon} title={f.title}  description={f.description} disabled={f.disabled} />)}
               </div>
             </div>
             {/* <div className="bg-gradient"/> */}
@@ -135,7 +138,7 @@ class App extends Component {
           <div className="App-features">
             <div className="container-features">
               <div className="heading">
-                Best-in-class tools for your workflow
+                How Can We Help
               </div>
               <div className="features">
                 {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
@@ -154,14 +157,17 @@ class App extends Component {
         <MediaQuery query="(min-width: 1130px)">
           <div className="Learn-box-container">
             <div className="Learn-box">
-              <div className="Learn-heading">Have a machine learning project in mind? We can help!</div>
+              <div className="Learn-heading">Have a project in mind?</div>
               <div className="Learn-cta">
-                <div className="logo-text">
+                {/*<div className="logo-text">
                   <div><img src="/logo-labs.svg"/></div>
                   <div className="text">Machine learning consulting</div>
+                </div>*/}
+                <div className="Learn-button-email">
+                  <img src="/email-icon.png" /> SEND US AN EMAIL
                 </div>
                 <div className="Learn-button">
-                  Learn more about our solutions
+                <img src="/phone-icon.png" /> SCHEDULE A FREE CALL
                 </div>
               </div>
             </div>
@@ -170,9 +176,104 @@ class App extends Component {
         <MediaQuery query="(max-width: 1129px)">
           <div className="Learn-box-container-mobile">
             <div className="Learn-box">
-              <div className="Learn-heading">Have a machine learning project in mind? We can help!</div>
-              <div><img src="/logo-labs-mobile.svg"/></div>
-              <div className="text">Machine learning consulting</div>
+              <div className="Learn-heading">Have a project in mind?</div>
+              {/*<div><img src="/logo-labs-mobile.svg"/></div>
+              <div className="text">Machine learning consulting</div>*/}
+              <div className="Learn-button-email">
+                <img src="/email-icon.png" /> SEND US AN EMAIL
+              </div>
+              <div className="Learn-button">
+                <img src="/phone-icon.png" /> SCHEDULE A FREE CALL
+              </div>
+            </div>
+          </div>
+        </MediaQuery>
+      </>
+    )
+  }
+
+  renderCustomSolutions = () => {
+    return (
+      <div>
+        <MediaQuery query="(min-width: 720px)">
+          <div className="Custom-solutions">
+            <div className="container-features">
+              <div className="row">
+                <div className="col nlp">Natural Language Processing</div>
+                <div className="col computer-vision">Computer Vision</div>
+                <div className="col churn-prediction">Churn Prediction</div>
+                <div className="col predictive-analytics">Predictive Analytics</div>
+              </div>
+              <div className="row">
+                <div className="col sentiments-analysis">Sentiments Analysis</div>
+                <div className="col sales-forecasting">Sales Forecasting</div>
+                <div className="col trading-signals">Trading Signals</div>
+                <div className="col supply-chain-optimization">Supply-chain Optimization</div>
+              </div>
+              <div className="row">
+                <div className="col recommendation-systems">Recommendation Systems</div>
+                <div className="col graph-classification">Graph Classification</div>
+                <div className="col hyperparameter-optimization">Hyperparameter Optimization</div>
+                <div className="col model-compression">Model Compressions</div>
+              </div>
+              <div className="Applications-button">Do you have an application that's not listed above? <a href="#">&nbsp; Let us know</a> </div>
+            </div>
+            {/* <div className="bg-gradient"/> */}
+          </div>
+        </MediaQuery>
+        <MediaQuery query="(max-width: 719px)">
+          <div className="Custom-solutions">
+            <div className="container-features">
+              <div className="heading">
+              Custom Solutions for Enterprises and Startups
+              </div>
+              <div className="features">
+                {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
+              </div>
+            </div>
+            {/* <div className="bg-gradient"/> */}
+          </div>
+        </MediaQuery>
+      </div>
+    );
+  }
+
+  renderFormBox = () => {
+    return (
+      <>
+        <MediaQuery query="(min-width: 1130px)">
+          <div className="Tell-us-about-box-container">
+            <div className="Tell-us-about-box">
+              <div className="Tell-us-about-heading">Tell Us About Your Project</div>
+              <div className="Tell-us-about-cta">
+                {/*<div className="logo-text">
+                  <div><img src="/logo-labs.svg"/></div>
+                  <div className="text">Machine learning consulting</div>
+                </div>*/}
+                <div className="Learn-button">
+                  <img src="/phone-icon.png" /> SCHEDULE A FREE CALL
+                </div>
+              </div>
+              <span className="form-text">Or</span>
+              <form>
+                <input className="email-input" type="text" placeholder= "email"></input><br />
+                <input className="project-input" type="text" placeholder="Describe your project"></input>
+              </form>
+              <div className="Tell-us-about-cta">
+                <div className="Learn-button-email">
+                  <img src="/email-icon.png" /> SEND US AN EMAIL
+                </div>
+              </div>
+              <span className="form-text">Or <strong>Click Here</strong> to email us directly</span>
+            </div>
+          </div>
+        </MediaQuery>
+        <MediaQuery query="(max-width: 1129px)">
+          <div className="Tell-us-about-box-container-mobile">
+            <div className="Tell-us-about-box">
+              <div className="Tell-us-about-heading">Tell Us About Your Project</div>
+              {/*<div><img src="/logo-labs-mobile.svg"/></div>
+              <div className="text">Machine learning consulting</div>*/}
               <div className="Learn-button">
                 Learn more
               </div>
@@ -191,6 +292,8 @@ class App extends Component {
         <div className="App-hero-robot"/>
         {this.renderFeatures()}
         {this.renderBottomBox()}
+        {this.renderCustomSolutions()}
+        {this.renderFormBox()}
       </div>);
   }
 }

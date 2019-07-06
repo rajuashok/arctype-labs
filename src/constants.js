@@ -2,27 +2,28 @@ import React from 'react';
 
 export const arctypeFeatures = [
   {
-    title: <span>Arctype <span className="text-green">SQL</span></span>,
-    description: <div className="feat-margin-sql">The next-generation SQL client built for collaboration</div>,
-    icon: "/sql-icon.svg",
+    title: <span><strong>Feasability Studies</strong></span>,
+    description: <div className="feat-margin-sql">Determine whether your project is a fit for machine learning and artifical intelligence, even before you make a significant investment</div>,
+    icon: "/Microscope.png",
     disabled: false
   },
   {
-    title: <span>Arctype <span className="text-orange">Dataprep</span></span>,
-    description: <div className="feat-margin-dataprep">Intelligent visual data preparation and date cleaning</div>,
-    icon: "/dataprep-icon.svg",
+    title: <span><strong>Model Development</strong></span>,
+    description: <div className="feat-margin-dataprep">End-to-end model development including data preparation, algorithmic selection, model training, and model deployment.</div>,
+    icon: "/Wrench.png",
     disabled: true
   },
   {
-    title: <span>Arctype <span className="text-blue">Datasets</span></span>,
-    description: <div className="feat-margin-dataset">Share and manage datasets across teams</div>,
-    icon: "/datasets-icon.svg",
+    icon: "/Document.png",
+    title: <span><strong>Research Reports</strong></span>,
+    description: <div className="feat-margin-dataset">Custom research for your specific domain and problems conducted by research scientists trained at leading universities.</div>,
+    
     disabled: true
   },
-  {
+  /*{
     title: <span>Arctype <span className="text-pink">ML</span></span>,
     description: <div className="feat-margin-ml">No-code machine learning</div>,
     icon: "/ml-icon.svg",
     disabled: true
-  },
+  },*/
 ]
