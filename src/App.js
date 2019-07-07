@@ -4,6 +4,7 @@ import Firestore from "./Firestore";
 import * as cx from 'classnames';
 import MediaQuery from 'react-responsive';
 import { arctypeFeatures } from './constants';
+import ExpandCollapse from 'react-expand-collapse';
 
 class Benefits extends Component {
   render() {
@@ -234,23 +235,25 @@ class App extends Component {
               {/*<div className="features">
                 {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
               </div>*/}
-                            <div className="row">
+              <div>
                 <div className="col nlp"><p className="solutions-title">Natural Language Processing</p></div>
                 <div className="col computer-vision"><p className="solutions-title">Computer Vision</p></div>
+                <ExpandCollapse
+                previewHeight="10px"
+                >
                 <div className="col churn-prediction"><p className="solutions-title">Churn Prediction</p></div>
                 <div className="col predictive-analytics"><p className="solutions-title">Predictive Analytics</p></div>
-              </div>
-              <div className="row">
+            
                 <div className="col sentiments-analysis"><p className="solutions-title">Sentiments Analysis</p></div>
                 <div className="col sales-forecasting"><p className="solutions-title">Sales Forecasting</p></div>
                 <div className="col trading-signals"><p className="solutions-title">Trading Signals</p></div>
                 <div className="col supply-chain-optimization"><p className="solutions-title">Supply-chain Optimization</p></div>
-              </div>
-              <div className="row">
+
                 <div className="col recommendation-systems"><p className="solutions-title">Recommendation Systems</p></div>
                 <div className="col graph-classification"><p className="solutions-title">Graph Classification</p></div>
                 <div className="col hyperparameter-optimization"><p className="solutions-title">Hyperparameter Optimization</p></div>
                 <div className="col model-compression"><p className="solutions-title">Model Compressions</p></div>
+                </ExpandCollapse>
               </div>
             </div>
             {/* <div className="bg-gradient"/> */}
