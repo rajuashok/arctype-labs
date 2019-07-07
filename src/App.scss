@@ -842,7 +842,7 @@ color: #fff;
 .Learn-box-container-mobile {
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 
   @media only screen and (max-width: 412px) {
     padding-bottom: 460px;
@@ -962,9 +962,9 @@ color: #fff;
     box-shadow: 0px 34px 74px rgba(175, 109, 239, 0.22);
     border-radius: 20px;
     overflow: hidden;
-    height: 341px;
+    height: 630px;
     width: 280px;
-    padding: 25px 29px;
+    padding: 50px 15px;
 
     display: flex;
     flex-direction: column;
@@ -974,7 +974,7 @@ color: #fff;
       font-family: Fieldwork;
       font-style: normal;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 25px;
       line-height: 28px;
       letter-spacing: 1.51355px;
       text-align: center;
@@ -1000,7 +1000,8 @@ color: #fff;
       align-items: center;
       justify-content: center;
       padding: 18px 62px;
-      margin-top: 20px;
+      margin-top: unset;
+      margin-bottom: 1em;
 
       background: #FAFBFD;
       box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
@@ -1019,7 +1020,66 @@ color: #fff;
       color: #905FFC;
       white-space: nowrap;
     }
-  }}
+
+    .Learn-button-email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 62px;
+      margin-top: 20px;
+      margin-bottom: 2em;
+
+      background: #431BE5;
+      box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
+      border-radius: 7px;
+
+      font-family: Nunito Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 18px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      color: #fff;
+    }
+
+    .Learn-button img {
+      margin-right: 1em;
+    }
+  
+    .Learn-button-email img {
+      margin-right: 2em;
+    }
+
+    .email-input {
+      height: 50px;
+      font-size: 12px;
+      width: 250px;
+      margin-top: 10px;
+      padding: 0 0 1em 1em;
+    }
+    
+    .project-input {
+      font-size: 12px;
+      height: 100px;
+      width: 250px;
+      margin-top: 1em;
+      padding: 0 0 5em 1em;
+    }
+
+    .form-text {
+      font-family: 'Nunito Sans';
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
 
 .App-head-mobile-wrapper {
   background-image: url('/background-mobile.svg');

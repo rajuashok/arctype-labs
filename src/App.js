@@ -225,19 +225,37 @@ class App extends Component {
             {/* <div className="bg-gradient"/> */}
           </div>
         </MediaQuery>
-       {/*} <MediaQuery query="(max-width: 719px)">
+        <MediaQuery query="(max-width: 719px)">
           <div className="Custom-solutions">
             <div className="container-features">
               <div className="heading">
               Custom Solutions for Enterprises and Startups
               </div>
-              <div className="features">
+              {/*<div className="features">
                 {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
+              </div>*/}
+                            <div className="row">
+                <div className="col nlp"><p className="solutions-title">Natural Language Processing</p></div>
+                <div className="col computer-vision"><p className="solutions-title">Computer Vision</p></div>
+                <div className="col churn-prediction"><p className="solutions-title">Churn Prediction</p></div>
+                <div className="col predictive-analytics"><p className="solutions-title">Predictive Analytics</p></div>
+              </div>
+              <div className="row">
+                <div className="col sentiments-analysis"><p className="solutions-title">Sentiments Analysis</p></div>
+                <div className="col sales-forecasting"><p className="solutions-title">Sales Forecasting</p></div>
+                <div className="col trading-signals"><p className="solutions-title">Trading Signals</p></div>
+                <div className="col supply-chain-optimization"><p className="solutions-title">Supply-chain Optimization</p></div>
+              </div>
+              <div className="row">
+                <div className="col recommendation-systems"><p className="solutions-title">Recommendation Systems</p></div>
+                <div className="col graph-classification"><p className="solutions-title">Graph Classification</p></div>
+                <div className="col hyperparameter-optimization"><p className="solutions-title">Hyperparameter Optimization</p></div>
+                <div className="col model-compression"><p className="solutions-title">Model Compressions</p></div>
               </div>
             </div>
-            {/* <div className="bg-gradient"/> 
+            {/* <div className="bg-gradient"/> */}
           </div>
-        </MediaQuery>*/}
+        </MediaQuery>
       </div>
     );
   }
@@ -276,11 +294,24 @@ class App extends Component {
           <div className="Tell-us-about-box-container-mobile">
             <div className="Tell-us-about-box">
               <div className="Tell-us-about-heading">Tell Us About Your Project</div>
+              <div className="Tell-us-about-cta">
               {/*<div><img src="/logo-labs-mobile.svg"/></div>
               <div className="text">Machine learning consulting</div>*/}
               <div className="Learn-button">
-                Learn more
+                <img src="/phone-icon.png" /> SCHEDULE A FREE CALL
               </div>
+              </div>
+              <span className="form-text">Or</span>
+              <form>
+                <input className="email-input" type="text" placeholder= "Email"></input><br />
+                <input className="project-input" type="text" placeholder="Describe your project"></input>
+              </form>
+              <div className="Tell-us-about-cta">
+                <div className="Learn-button-email">
+                  <img src="/email-icon.png" /> SEND US AN EMAIL
+                </div>
+              </div>
+              <span className="form-text">Or <strong>Click Here</strong> to email us directly</span>
             </div>
           </div>
         </MediaQuery>
