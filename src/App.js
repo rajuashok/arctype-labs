@@ -90,6 +90,7 @@ class App extends Component {
         <MediaQuery query="(min-width: 720px)">
           <div className="App-heading-wrapper">
             <div className="heading-container">
+            <div className="icon"><img src="/arctype-labs.png" /></div>
               <div className="App-heading">
                 Machine Learning Consulting
               </div>
@@ -224,7 +225,7 @@ class App extends Component {
             {/* <div className="bg-gradient"/> */}
           </div>
         </MediaQuery>
-        <MediaQuery query="(max-width: 719px)">
+       {/*} <MediaQuery query="(max-width: 719px)">
           <div className="Custom-solutions">
             <div className="container-features">
               <div className="heading">
@@ -234,9 +235,9 @@ class App extends Component {
                 {arctypeFeatures.map(f => <Feature title={f.title} icon={f.icon} description={f.description} disabled={f.disabled} />)}
               </div>
             </div>
-            {/* <div className="bg-gradient"/> */}
+            {/* <div className="bg-gradient"/> 
           </div>
-        </MediaQuery>
+        </MediaQuery>*/}
       </div>
     );
   }
@@ -259,7 +260,7 @@ class App extends Component {
               </div>
               <span className="form-text">Or</span>
               <form>
-                <input className="email-input" type="text" placeholder= "email"></input><br />
+                <input className="email-input" type="text" placeholder= "Email"></input><br />
                 <input className="project-input" type="text" placeholder="Describe your project"></input>
               </form>
               <div className="Tell-us-about-cta">
