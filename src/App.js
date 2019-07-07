@@ -294,6 +294,7 @@ class App extends Component {
       <div>
         {this.renderTop()}
         <div className="App-hero-robot"/>
+        <div className="Hero-robot-weights" />
         {this.renderFeatures()}
         {this.renderBottomBox()}
         {this.renderCustomSolutions()}
