@@ -627,10 +627,10 @@
 
     .Tell-us-about-cta {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+      flex-direction: column;
+      align-items: center;
       margin-top: 28px;
-      margin-left: 9em;
+      
     }
     
     .logo-text {
@@ -755,6 +755,7 @@ color: #fff;
   height: 100px;
   width: 350px;
   margin-top: 1em;
+  margin-bottom: 1em;
   padding: 0 0 5em 1em;
 }
 

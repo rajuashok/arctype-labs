@@ -288,6 +288,7 @@ class App extends Component {
                   <div><img src="/logo-labs.svg"/></div>
                   <div className="text">Machine learning consulting</div>
                 </div>*/}
+                <div>
                 <div className="Learn-button">
                   <img src="/phone-icon.png" /> SCHEDULE A FREE CALL
                 </div>
@@ -297,12 +298,13 @@ class App extends Component {
                 <input className="email-input" type="text" placeholder= "Email"></input><br />
                 <input className="project-input" type="text" placeholder="Describe your project"></input>
               </form>
-              <div className="Tell-us-about-cta">
+              <div>
                 <div className="Learn-button-email">
                   <img src="/email-icon.png" /> SEND US AN EMAIL
                 </div>
               </div>
               <span className="form-text">Or <strong>Click Here</strong> to email us directly</span>
+              </div>
             </div>
           </div>
         </MediaQuery>
