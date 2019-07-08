@@ -42,7 +42,7 @@ class Header extends Component {
                       // breakpoint="768" /* Show site nav at this breakpoint */
                       // debug={false} /* Keep ContentGroups open to make debugging easier */
                       >
-                      <ContentGroup title="Product" width="470" height="502">
+                      {/*<ContentGroup title="Product" width="470" height="502">
                         <div className="Menu">
                           {arctypeFeatures.map(f => <MenuItem title={f.title} description={f.description} icon={f.icon} disabled={f.disabled} />)}
                         </div>
@@ -50,6 +50,7 @@ class Header extends Component {
                       {/* <ContentGroup title="Solutions" />
                       <ContentGroup title="Sign in" /> */}
                     </SiteNav>
+                    <a className="menu-item" href="#">Product</a>
                     <a className="menu-item" href="#">Solutions</a>
                     <a className="menu-item" href="#">Sign in</a>
                     {/* <div className="Header-menu">
