@@ -124,6 +124,10 @@
   background-repeat: no-repeat;
   background-position: 0px -75px;
 
+  @media only screen and (max-width: 720px) {
+    background: none;
+  }
+
   @media only screen and (max-width: 412px) {
     // padding-bottom: 419px;
   }
@@ -958,7 +962,7 @@ color: #fff;
 }
 
 .collapse.in {
-  display: block
+  display: block !important;
 }
 
 .Tell-us-about-box-container-mobile {

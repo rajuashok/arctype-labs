@@ -81,6 +81,8 @@ class Feature extends Component {
 }
 
 class App extends Component {
+  state = { open: false };
+
   onSubmitEmail = () => {
     this.props.history.push('/signup');
   }
@@ -204,9 +206,6 @@ class App extends Component {
   }
 
   renderCustomSolutions = () => {
-    this.state = { open: false };
-
-
     return (
       <div>
         <MediaQuery query="(min-width: 720px)">
