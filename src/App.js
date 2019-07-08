@@ -85,6 +85,12 @@ class App extends Component {
     this.props.history.push('/signup');
   }
 
+  toggle() {
+    this.setState({
+      open: !this.state.open
+    });}
+
+
   renderTop = () => {
     return (
       <div>
@@ -112,6 +118,9 @@ class App extends Component {
               </div>
               <div className="subheading">
                 Helping you solve business problems using machine learning and AI
+              </div>
+              <div className="Header-button">
+                TELL US ABOUT YOUR PROJECT
               </div>
             </div>
           </div>
@@ -195,6 +204,9 @@ class App extends Component {
   }
 
   renderCustomSolutions = () => {
+    this.state = { open: false };
+
+
     return (
       <div>
         <MediaQuery query="(min-width: 720px)">
@@ -238,9 +250,9 @@ class App extends Component {
               <div>
                 <div className="col nlp"><p className="solutions-title">Natural Language Processing</p></div>
                 <div className="col computer-vision"><p className="solutions-title">Computer Vision</p></div>
-                <ExpandCollapse
-                previewHeight="10px"
-                >
+                <div className="col recommendation-systems" onClick={this.toggle.bind(this)}><p className="solutions-title">And Many More</p></div>
+                <div className={"collapse" + (this.state.open ? ' in' : '')}>
+                  <div>
                 <div className="col churn-prediction"><p className="solutions-title">Churn Prediction</p></div>
                 <div className="col predictive-analytics"><p className="solutions-title">Predictive Analytics</p></div>
             
@@ -253,7 +265,8 @@ class App extends Component {
                 <div className="col graph-classification"><p className="solutions-title">Graph Classification</p></div>
                 <div className="col hyperparameter-optimization"><p className="solutions-title">Hyperparameter Optimization</p></div>
                 <div className="col model-compression"><p className="solutions-title">Model Compressions</p></div>
-                </ExpandCollapse>
+                </div>
+                </div>
               </div>
             </div>
             {/* <div className="bg-gradient"/> */}
@@ -327,7 +340,7 @@ class App extends Component {
     return (
       <div>
         {this.renderTop()}
-        <div className="App-hero-robot"/>
+        {/*<div className="App-hero-robot"/>*/}
         <div className="Hero-robot-weights" />
         {this.renderFeatures()}
         {this.renderBottomBox()}
