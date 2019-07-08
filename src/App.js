@@ -115,15 +115,16 @@ class App extends Component {
         <MediaQuery query="(max-width: 719px)">
           <div className="App-head-mobile-wrapper">
             <div className="head-mobile-container">
+              <div className="icon"><img src="/arctype-labs.png" /></div>
               <div className="heading">
                 Machine Learning Consulting
               </div>
               <div className="subheading">
                 Helping you solve business problems using machine learning and AI
               </div>
-              <div className="Header-button">
+              {/*<div className="Header-button">
                 TELL US ABOUT YOUR PROJECT
-              </div>
+              </div>*/}
             </div>
           </div>
         </MediaQuery>
