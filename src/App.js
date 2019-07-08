@@ -96,7 +96,7 @@ class App extends Component {
   renderTop = () => {
     return (
       <div>
-        <MediaQuery query="(min-width: 720px)">
+        <MediaQuery query="(min-width: 901px)">
           <div className="App-heading-wrapper">
             <div className="heading-container">
             <div className="icon"><img src="/arctype-labs.png" /></div>
@@ -112,7 +112,7 @@ class App extends Component {
             </div>
           </div>
         </MediaQuery>
-        <MediaQuery query="(max-width: 719px)">
+        <MediaQuery query="(max-width: 900px)">
           <div className="App-head-mobile-wrapper">
             <div className="head-mobile-container">
               <div className="icon"><img src="/arctype-labs.png" /></div>
