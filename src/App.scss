@@ -608,10 +608,9 @@
   padding-bottom: 155px;
   display: flex;
   justify-content: center;
-  background: url("/keys-bottom.png");
+  background: url("/key-bottom-left.png"), url('/key-bottom-right.png');
   background-repeat: no-repeat;
-  background-position: 0px 45px;
-  background-size: 100% 100%;
+  background-position: 0px 45px, right center;
 
   @media only screen and (max-width: 1100px) {
     padding-left: 30px;
