@@ -4,7 +4,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 1000px;
+  height: 1200px;
 
   .heading-container {
     padding: 234px 0 0 190px;
@@ -22,7 +22,9 @@
     }
   }
   @media only screen and (min-width: 1700px) {
-    background-size: 100% 100%;
+    background-image: url('/hero-wide.svg');
+    background-size: cover;
+    background-position: center;
     height: 1400px;
   }
 
@@ -72,12 +74,13 @@
 
 .App-hero-robot {
   position: absolute;
-  top: 315px;
+  top: 5em;
   // left: 1067px;
-  right: 90px;
-  height: 576px;
-  width: 48%;
-  background-image: url('/robot-weights.svg');
+  right: 11em;
+  height: 20%;
+  width: 50%;
+  background-image: url('/hero-no-bg-no-floor.svg');
+  background-repeat: no-repeat;
   z-index: 2;
 
   @media only screen and (max-width: 1260px) {
@@ -86,7 +89,7 @@
   }
 
   @media only screen and (max-width: 719px) {
-    background-image: url('/robot-mobile.svg');
+    background-image: url('/hero-no-bg.svg');
     background-repeat: no-repeat;
     height: 231px;
     width: 141px;
@@ -219,6 +222,10 @@
 
   @media only screen and (max-width: 412px) {
     // padding-bottom: 419px;
+  }
+  @media only screen and (min-width: 1700px) {
+    background: url('/bg-swoosh-big.svg');
+    background-repeat: no-repeat;
   }
 
   .container-features {
@@ -604,7 +611,7 @@
   background: url("/keys-bottom.png");
   background-repeat: no-repeat;
   background-position: 0px 45px;
-  background-size: contain;
+  background-size: 100% 100%;
 
   @media only screen and (max-width: 1100px) {
     padding-left: 30px;
