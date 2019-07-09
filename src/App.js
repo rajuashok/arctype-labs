@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Firestore from "./Firestore";
-import * as cx from 'classnames';
+//import * as cx from 'classnames';
 import MediaQuery from 'react-responsive';
 import { arctypeFeatures } from './constants';
-import ExpandCollapse from 'react-expand-collapse';
 
 class Benefits extends Component {
   render() {
