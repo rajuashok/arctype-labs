@@ -232,7 +232,7 @@ class App extends Component {
                 <div className="col hyperparameter-optimization"><p className="solutions-title">Hyperparameter Optimization</p></div>
                 <div className="col model-compression"><p className="solutions-title">Model Compressions</p></div>
               </div>
-              <div className="Applications-button">Do you have an application that's not listed above? <a href="#">&nbsp; Let us know</a> </div>
+              <div className="Applications-button">Do you have an application that's not listed above? <a href="#" className="colored">&nbsp; Let us know</a> </div>
             </div>
             {/* <div className="bg-gradient"/> */}
           </div>

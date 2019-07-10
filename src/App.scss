@@ -252,7 +252,7 @@
       font-size: 34px;
       line-height: 46px;
       width: 820px;
-  
+      padding-bottom: 1em;
       text-align: center;
       letter-spacing: 1.42946px;
   
@@ -321,6 +321,10 @@
 
 .text-pink {
   color: #E883D9;
+}
+
+.colored {
+  color: #BBA0FF;
 }
 
 .Feature-box {
@@ -532,7 +536,7 @@
 
     background: #FAFBFD;
     box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
-    border-radius: 4px;
+    border-radius: 5px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -557,7 +561,7 @@
 
     background: #8E62FF;
     box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
-    border-radius: 4px;
+    border-radius: 7px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -603,7 +607,7 @@
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #905FFC;
+  color: #FF6CBB;
 
   @media only screen and (max-width: 450px) {
     width: 300px;
