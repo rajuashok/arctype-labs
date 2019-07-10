@@ -1,6 +1,6 @@
 
 .App-heading-wrapper {
-  background-image: url('/hero.png');
+  background-image: url('/hero-1440.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -1138,8 +1138,8 @@ color: #fff;
 
 .App-head-mobile-wrapper {
   background-image: url('/hero-mobile.svg');
-  background-repeat: space;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   width: 100%;
   height: 845px;
   background-size: cover;
