@@ -4,17 +4,17 @@ export const arctypeFeatures = [
   {
     title: <span><strong>Feasability Studies</strong></span>,
     description: <div className="feat-margin-sql">Determine whether your project is a fit for machine learning and artifical intelligence, even before you make a significant investment</div>,
-    icon: "/Microscope.png",
+    icon: "/Microscope.svg",
     disabled: false
   },
   {
     title: <span><strong>Model Development</strong></span>,
     description: <div className="feat-margin-dataprep">End-to-end model development including data preparation, algorithmic selection, model training, and model deployment.</div>,
-    icon: "/Wrench.png",
+    icon: "/Wrench.svg",
     disabled: true
   },
   {
-    icon: "/Document.png",
+    icon: "/Document.svg",
     title: <span><strong>Research Reports</strong></span>,
     description: <div className="feat-margin-dataset">Custom research for your specific domain and problems conducted by research scientists trained at leading universities.</div>,
     

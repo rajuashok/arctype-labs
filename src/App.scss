@@ -187,7 +187,7 @@
     .features {
       display: flex;
       justify-content: space-between;
-      margin-top: 63px;
+      /*margin-top: 63px;*/
 
       @media only screen and (max-width: 1200px) {
         // flex-direction: column;
@@ -345,7 +345,7 @@
   @media only screen and (max-width: 412px) {
     margin: 0 0 20px 0;
     width: 280px;
-    height: 457px;
+    height: 400px;
   }
 
   .title {
@@ -385,7 +385,7 @@
     letter-spacing: 0.939354px;
     color: #8A99B7;
 
-    .feat-margin-sql {
+    /*.feat-margin-sql {
       padding-left: 32px;
       padding-right: 32px;
     }
@@ -403,7 +403,7 @@
     .feat-margin-ml {
       padding-left: 31px;
       padding-right: 32px;
-    }
+    }*/
 
     @media only screen and (max-width: 1200px) {
       margin-top: 0px;
@@ -543,7 +543,7 @@
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #905FFC;
+    color: #FF8390;
   }
 
   .Learn-button-email {
@@ -604,6 +604,11 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #905FFC;
+
+  @media only screen and (max-width: 450px) {
+    width: 300px;
+    margin-left: 1em;
+  }
 }
 
 .Tell-us-about-box-container {
@@ -695,7 +700,7 @@
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #905FFC;
+    color: #FF8390;
   }
 
   .Learn-button-email {
@@ -754,7 +759,6 @@ line-height: 18px;
 /* identical to box height */
 text-align: center;
 letter-spacing: 1px;
-text-transform: uppercase;
 color: #fff;
 
 @media only screen and (min-width: 1670px) {
@@ -819,6 +823,7 @@ color: #fff;
     font-weight: bold;
     font-family: 'Nunito Sans';
     color: white;
+    margin-bottom: 2em;
   }
 }
 
@@ -896,21 +901,22 @@ color: #fff;
     overflow: hidden;
     height: 341px;
     width: 280px;
-    padding: 25px 29px;
+    padding: 25px 22px;
 
     display: flex;
     flex-direction: column;
 
     .Learn-heading {
-      margin-bottom: 44px;
+      margin-bottom: 35px;
       font-family: Fieldwork;
       font-style: normal;
       font-weight: bold;
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 30px;
+      line-height: 35px;
       letter-spacing: 1.51355px;
       text-align: center;
       color: #FFFFFF;
+      padding-top: 0.5em;
     }
 
     .text {
@@ -933,7 +939,7 @@ color: #fff;
       justify-content: center;
       padding: 18px 62px;
       margin-top: 20px;
-
+      width: 240px;
       background: #FAFBFD;
       box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
       border-radius: 7px;
@@ -948,7 +954,7 @@ color: #fff;
       letter-spacing: 1px;
       text-transform: uppercase;
 
-      color: #905FFC;
+      color: #FF8390;
       white-space: nowrap;
     }
 
@@ -958,7 +964,7 @@ color: #fff;
       justify-content: center;
       padding: 18px 62px;
       margin-top: 20px;
-
+      width: 240px;
       background: #431BE5;
       box-shadow: 0px 5px 10px rgba(53, 5, 176, 0.2);
       border-radius: 7px;
@@ -1019,7 +1025,7 @@ color: #fff;
       font-style: normal;
       font-weight: bold;
       font-size: 25px;
-      line-height: 28px;
+      line-height: 35px;
       letter-spacing: 1.51355px;
       text-align: center;
       color: #FFFFFF;
@@ -1061,7 +1067,7 @@ color: #fff;
       letter-spacing: 1px;
       text-transform: uppercase;
 
-      color: #905FFC;
+      color: #FF8390;
       white-space: nowrap;
     }
 
@@ -1130,7 +1136,7 @@ color: #fff;
   background-repeat: space;
   background-position: center;
   width: 100%;
-  height: 815px;
+  height: 895px;
   background-size: cover;
 
   @media only screen and (max-width: 320px) {

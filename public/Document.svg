@@ -1,0 +1,24 @@
+<svg width="181" height="181" viewBox="0 0 181 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.4" x="1.41134" y="90.6877" width="126.256" height="126.256" rx="46.2503" transform="rotate(-45 1.41134 90.6877)" stroke="#F88ED0" stroke-width="1.12"/>
+<rect width="90.9831" height="90.9831" rx="32.7672" transform="matrix(0.707107 -0.707106 0.707107 0.707106 26.3535 90.6877)" fill="url(#paint0_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M73.6882 71.0245C73.6882 69.3677 75.0314 68.0245 76.6882 68.0245H96.7438L107.619 79.9646V106.295C107.619 107.951 106.276 109.295 104.619 109.295H76.6882C75.0314 109.295 73.6882 107.951 73.6882 106.295V71.0245Z" fill="url(#paint1_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M96.7437 68.0245L107.619 79.9646H99.7437C98.0868 79.9646 96.7437 78.6214 96.7437 76.9646L96.7437 68.0245Z" fill="white"/>
+<path d="M79.1882 76.5245H85.4591" stroke="#9460FA" stroke-linecap="round"/>
+<path opacity="0.6" d="M79.1882 80.5245H89.4591" stroke="#9460FA" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M104.709 106.618C109.108 106.618 112.674 103.052 112.674 98.6531C112.674 94.254 109.108 90.6877 104.709 90.6877C100.31 90.6877 96.7437 94.254 96.7437 98.6531C96.7437 103.052 100.31 106.618 104.709 106.618Z" fill="#4E299E"/>
+<rect opacity="0.2" x="51.9465" y="80.4874" width="14.8233" height="6.15666" rx="3.07833" fill="white"/>
+<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M113.995 109.697C113.995 107.997 115.373 106.618 117.073 106.618H125.74C127.44 106.618 128.818 107.997 128.818 109.697C128.818 111.397 127.44 112.775 125.74 112.775H117.073C115.373 112.775 113.995 111.397 113.995 109.697Z" fill="white"/>
+<rect opacity="0.3" x="54.2871" y="95.3729" width="7.80172" height="6.15666" rx="3.07833" fill="#A066F6"/>
+<rect opacity="0.3" x="109.792" y="64.9462" width="13.653" height="6.15666" rx="3.07833" fill="#A066F6"/>
+<path d="M102.194 98.3825L104.215 100.404L107.225 97.3942" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear" x1="80.122" y1="6.1781e-07" x2="-10.8611" y2="21.7223" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF91CC"/>
+<stop offset="1" stop-color="#895BFF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="116.64" y1="-1.27507" x2="49.4093" y2="31.9894" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F08BD3"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
