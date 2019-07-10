@@ -221,7 +221,7 @@
   z-index: 1;
   background: url('/bg-swoosh.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @media only screen and (max-width: 412px) {
     // padding-bottom: 419px;
@@ -738,11 +738,11 @@
 }
 
 .Applications-button {
-height: 40px;
-width: 650px;
+height: 45px;
+width: 542px;
 margin-top: 4em;
 margin-bottom: 13em;
-
+padding: 1em;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -761,9 +761,9 @@ text-align: center;
 letter-spacing: 1px;
 color: #fff;
 
-@media only screen and (min-width: 1670px) {
+/*@media only screen and (min-width: 1670px) {
   margin-bottom: 22em;
-}
+}*/
 
 }
 
